@@ -11,21 +11,24 @@ from multiobjet2 import *
 class AjoutNavireWindow(QWidget):
     def __init__(self):
         super().__init__()
-
         self.ui = Ajout_navire_form()
         self.ui.setupUi(self)
 
-        self.ui.fermer_ajout_navire.clicked.connect(self.close)
+    def closeEvent(self, event):
+        self.ui.navire.clear()
+        self.ui.description.clear()
+        super(AjoutNavireWindow, self).closeEvent(event)
 
 class ModifierNavireWindow(QWidget):
     def __init__(self):
         super().__init__()
-
         self.ui = Modifier_navire_form()
         self.ui.setupUi(self)
 
-        self.selectedItems = None
-        self.ui.fermer_modifier_navire.clicked.connect(self.close)
+    def closeEvent(self, event):
+        self.ui.navire.clear()
+        self.ui.description.clear()
+        super(ModifierNavireWindow, self).closeEvent(event)
 
 class NavireWindow(QWidget):
     def __init__(self):
@@ -34,6 +37,7 @@ class NavireWindow(QWidget):
         self.ui = Navire_form()
         self.ui.setupUi(self)
         self.display_table("SELECT * FROM navire")
+        self.selectedItems = None
 
         #related_widgets
         self.widget = AjoutNavireWindow()
@@ -48,24 +52,11 @@ class NavireWindow(QWidget):
 
         #externel_push_button_connections
         self.widget.ui.ajouter_ajout_navire.clicked.connect(self.ajouter_ajout_navire)
+        self.widget.ui.fermer_ajout_navire.clicked.connect(self.fermer_ajouter_navire)
         self.widget2.ui.enregistrer_modifier_navire.clicked.connect(self.enregistrer_modifier_navire)
-
-    def modifier_navire(self):
-        self.widget2.show()
-        self.widget2.selectedItems = self.ui.navire_table.selectedItems()
-        if(len(self.widget2.selectedItems) == 2):
-            self.widget2.ui.navire.insert(self.widget2.selectedItems[0].text())
-            self.widget2.ui.description.insertPlainText(self.widget2.selectedItems[1].text())
-
-    def supprimer_navire(self):
-        selectedItems = self.ui.navire_table.selectedItems()
-        id = int(self.ui.navire_table.verticalHeaderItem(selectedItems[0].row()).text())
-        nv = Navire(id, Navire.getMultiObjetId(id))
-        nv.supprimer()
-        self.ui.navire_table.removeRow(selectedItems[0].row())
+        self.widget2.ui.fermer_modifier_navire.clicked.connect(self.fermer_modifier_navire)
 
     def display_table(self, sql):
-        #sql = "SELECT * FROM navire"
         mycursor.execute(sql)
         myresult = mycursor.fetchall()
         mydb.commit()
@@ -75,6 +66,26 @@ class NavireWindow(QWidget):
             self.ui.navire_table.setVerticalHeaderItem(row,QTableWidgetItem(str(myresult[row][0])))
             self.ui.navire_table.setItem(row, 0, QTableWidgetItem(myresult[row][2]))
             self.ui.navire_table.setItem(row, 1, QTableWidgetItem(MultiObjet.getDescription(myresult[row][1])))
+
+    def rechercher_navire(self):
+        sql = "SELECT * FROM navire WHERE nom LIKE '{}%'".format(self.ui.rechercher_navire.text())
+        self.display_table(sql)
+
+    def modifier_navire(self):
+        self.selectedItems = self.ui.navire_table.selectedItems()
+        if len(self.selectedItems) == 2:
+            self.widget2.show()
+            self.widget2.ui.navire.insert(self.selectedItems[0].text())
+            self.widget2.ui.description.insertPlainText(self.selectedItems[1].text())
+
+    def supprimer_navire(self):
+        selectedItems = self.ui.navire_table.selectedItems()
+        if len(selectedItems) >= 2:
+            for i in range(0, len(selectedItems), 2):
+                id = int(self.ui.navire_table.verticalHeaderItem(selectedItems[i].row()).text())
+                nv = Navire(id, Navire.getMultiObjetId(id))
+                nv.supprimer()
+                self.ui.navire_table.removeRow(selectedItems[i].row())
 
     def ajouter_ajout_navire(self):
         self.widget.show()
@@ -92,21 +103,27 @@ class NavireWindow(QWidget):
         self.ui.navire_table.setItem(availableRow, 0, QTableWidgetItem(navire))
         self.ui.navire_table.setItem(availableRow, 1, QTableWidgetItem(description))
 
+    def fermer_ajouter_navire(self):
+        self.widget.ui.navire.clear()
+        self.widget.ui.description.clear()
+        self.widget.close()
+
     def enregistrer_modifier_navire(self):
-        current_navire_id = int(self.ui.navire_table.verticalHeaderItem(self.widget2.selectedItems[0].row()).text())
+        current_navire_id = int(self.ui.navire_table.verticalHeaderItem(self.selectedItems[0].row()).text())
         nav = Navire(current_navire_id, Navire.getMultiObjetId(current_navire_id))
         nav.modifier(self.widget2.ui.navire.text(), self.widget2.ui.description.toPlainText())
         # update displayed table
-        self.widget2.selectedItems[0].setText(self.widget2.ui.navire.text())
-        self.widget2.selectedItems[1].setText(self.widget2.ui.description.toPlainText())
+        self.selectedItems[0].setText(self.widget2.ui.navire.text())
+        self.selectedItems[1].setText(self.widget2.ui.description.toPlainText())
         # clear line edits after modifying
         self.widget2.ui.navire.clear()
         self.widget2.ui.description.clear()
 
-    def rechercher_navire(self):
-        sql = "SELECT * FROM navire WHERE nom LIKE '{}%'".format(self.ui.rechercher_navire.text())
-        self.display_table(sql)
-
+    def fermer_modifier_navire(self):
+        self.widget2.ui.navire.clear()
+        self.widget2.ui.description.clear()
+        self.widget2.close()
+#todo : add a tooltip to descriptions cz it's not showed completly
 if __name__ == "__main__" :
     app = QApplication()
     widget = NavireWindow()
