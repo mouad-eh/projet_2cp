@@ -14,6 +14,7 @@ class MultiObjet:
 
     @staticmethod
     def getDescription(multi_objet_id): # this will help displaying the table
+        # the subclasses are inherting this maybe i should fix that
         sql = "SELECT * FROM multi_objet WHERE multi_objet_id = %s"
         mycursor.execute(sql, (multi_objet_id,))
         myresult = mycursor.fetchall()
@@ -106,3 +107,36 @@ class Marchandise(MultiObjet):
         mo = MultiObjet(self.multi_objet_id)
         mo.supprimer()
 
+class Camion(MultiObjet):
+    def __init__(self, camion_id, multiobjet_id):
+        super(Camion, self).__init__(multiobjet_id)
+        self.camion_id = camion_id
+    @staticmethod
+    def getMultiObjetId(camion_id):# help to construct marchandise Object by only knowing marchandise_id-got from selection-
+        sql = "SELECT * FROM camion WHERE camion_id = %s"
+        mycursor.execute(sql, (camion_id,))
+        myresult = mycursor.fetchall()
+        mydb.commit()
+        return myresult[0][1]
+
+    def inserer(self, marque, matricule, disponibilite, description):
+        mo = MultiObjet(0)
+        self.multi_objet_id = mo.inserer(description)
+        sql = "INSERT INTO camion (multi_objet_id, marque, matricule, disponibilite) VALUES (%s, %s, %s, %s)"
+        mycursor.execute(sql, (self.multi_objet_id, marque, matricule, disponibilite))
+        mydb.commit()
+        return mycursor.lastrowid
+
+    def modifier(self, marque, matricule, disponibilite, description):
+        mo = MultiObjet(self.multi_objet_id)
+        mo.modifier(description)
+        sql = "UPDATE camion SET marque = %s, matricule = %s, disponibilite = %s where camion_id = %s"
+        mycursor.execute(sql, (marque, matricule, disponibilite, self.camion_id))
+        mydb.commit()
+
+    def supprimer(self):
+        sql = "DELETE FROM camion WHERE camion_id = %s"
+        mycursor.execute(sql, (self.camion_id,))
+        mydb.commit()
+        mo = MultiObjet(self.multi_objet_id)
+        mo.supprimer()
