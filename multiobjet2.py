@@ -11,6 +11,7 @@ mycursor = mydb.cursor()
 class MultiObjet:
     def __init__(self, multi_objet_id):
         self.multi_objet_id = multi_objet_id
+
     @staticmethod
     def getDescription(multi_objet_id): # this will help displaying the table
         sql = "SELECT * FROM multi_objet WHERE multi_objet_id = %s"
@@ -48,13 +49,6 @@ class Navire(MultiObjet):
         mydb.commit()
         return myresult[0][1]
 
-    def getNom(self): #this will help displaying the table
-        sql = "SELECT * FROM navire WHERE navire_id = %s"
-        mycursor.execute(sql, (self.navire_id,))
-        myresult = mycursor.fetchall()
-        mydb.commit()
-        return myresult[0][2]
-
     def inserer(self, navire, description):
         mo = MultiObjet(0)
         self.multi_objet_id = mo.inserer(description)
@@ -76,3 +70,39 @@ class Navire(MultiObjet):
         mydb.commit()
         mo = MultiObjet(self.multi_objet_id) #multi_objet_id is supposed to be set
         mo.supprimer()
+
+class Marchandise(MultiObjet):
+    def __init__(self, marchandise_id, multi_objet_id):
+        super().__init__(multi_objet_id)
+        self.marchandise_id = marchandise_id
+
+    @staticmethod
+    def getMultiObjetId(marchandise_id):# help to construct marchandise Object by only knowing marchandise_id-got from selection-
+        sql = "SELECT * FROM marchandise WHERE marchandise_id = %s"
+        mycursor.execute(sql, (marchandise_id,))
+        myresult = mycursor.fetchall()
+        mydb.commit()
+        return myresult[0][1]
+
+    def inserer(self, nature_marchandise, description):
+        mo = MultiObjet(0)
+        self.multi_objet_id = mo.inserer(description)
+        sql = "INSERT INTO marchandise (multi_objet_id, nature_marchandise) VALUES (%s, %s)"
+        mycursor.execute(sql, (self.multi_objet_id, nature_marchandise))
+        mydb.commit()
+        return mycursor.lastrowid
+
+    def modifier(self, nature_marchandise, description):
+        mo = MultiObjet(self.multi_objet_id)
+        mo.modifier(description)
+        sql = "UPDATE marchandise SET nature_marchandise = %s where marchandise_id = %s"
+        mycursor.execute(sql, (nature_marchandise, self.marchandise_id))
+        mydb.commit()
+
+    def supprimer(self):
+        sql = "DELETE FROM marchandise WHERE marchandise_id = %s"
+        mycursor.execute(sql, (self.marchandise_id,))
+        mydb.commit()
+        mo = MultiObjet(self.multi_objet_id)
+        mo.supprimer()
+
