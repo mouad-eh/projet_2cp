@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'camionIGcgoL.ui'
+## Form generated from reading UI file 'camionFXedVF.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -65,14 +65,6 @@ class Ui_Form(object):
 
         self.horizontalLayout_2.addWidget(self.label_2)
 
-        self.recherche_marque = QLineEdit(self.frame_3)
-        self.recherche_marque.setObjectName(u"recherche_marque")
-        self.recherche_marque.setAutoFillBackground(False)
-        self.recherche_marque.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
-
-        self.horizontalLayout_2.addWidget(self.recherche_marque)
-
         self.recherche_matricule = QLineEdit(self.frame_3)
         self.recherche_matricule.setObjectName(u"recherche_matricule")
         self.recherche_matricule.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
@@ -80,17 +72,11 @@ class Ui_Form(object):
 
         self.horizontalLayout_2.addWidget(self.recherche_matricule)
 
-        self.recherche_dispo = QLineEdit(self.frame_3)
-        self.recherche_dispo.setObjectName(u"recherche_dispo")
-        self.recherche_dispo.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
-
-        self.horizontalLayout_2.addWidget(self.recherche_dispo)
-
         self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_2.addItem(self.horizontalSpacer_2)
 
+        self.horizontalLayout_2.setStretch(1, 3)
 
         self.verticalLayout_2.addWidget(self.frame_3)
 
@@ -101,16 +87,14 @@ class Ui_Form(object):
         self.gridLayout_2 = QGridLayout(self.frame_4)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.camion_table = QTableWidget(self.frame_4)
-        if (self.camion_table.columnCount() < 4):
-            self.camion_table.setColumnCount(4)
+        if (self.camion_table.columnCount() < 3):
+            self.camion_table.setColumnCount(3)
         __qtablewidgetitem = QTableWidgetItem()
         self.camion_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
         self.camion_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
         self.camion_table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.camion_table.setHorizontalHeaderItem(3, __qtablewidgetitem3)
         self.camion_table.setObjectName(u"camion_table")
         self.camion_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.camion_table.setSelectionBehavior(QAbstractItemView.SelectRows)
@@ -186,17 +170,13 @@ class Ui_Form(object):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.label.setText(QCoreApplication.translate("Form", u"Camion", None))
         self.label_2.setText(QCoreApplication.translate("Form", u"Recherche", None))
-        self.recherche_marque.setPlaceholderText(QCoreApplication.translate("Form", u"Marque", None))
         self.recherche_matricule.setPlaceholderText(QCoreApplication.translate("Form", u"Matricule", None))
-        self.recherche_dispo.setPlaceholderText(QCoreApplication.translate("Form", u"Disponibilit\u00e9", None))
         ___qtablewidgetitem = self.camion_table.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"Marque", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"Matricule", None));
         ___qtablewidgetitem1 = self.camion_table.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("Form", u"Matricule", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("Form", u"Disponibilit\u00e9", None));
         ___qtablewidgetitem2 = self.camion_table.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("Form", u"Disponibilit\u00e9", None));
-        ___qtablewidgetitem3 = self.camion_table.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("Form", u"Description", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("Form", u"Description", None));
         self.nouveau_camion.setText(QCoreApplication.translate("Form", u"Nouveau", None))
         self.modifier_camion.setText(QCoreApplication.translate("Form", u"Modifier", None))
         self.supprimer_camion.setText(QCoreApplication.translate("Form", u"Supprimer", None))

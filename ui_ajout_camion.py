@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ajout_camionxDRzbj.ui'
+## Form generated from reading UI file 'ajout_camionIRBujn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(571, 397)
+        Form.resize(571, 232)
         self.verticalLayout_3 = QVBoxLayout(Form)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -64,12 +64,6 @@ class Ui_Form(object):
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setSpacing(12)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.label_2 = QLabel(self.frame_3)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"color: rgb(0, 131, 130);")
-
-        self.verticalLayout_2.addWidget(self.label_2)
-
         self.label_4 = QLabel(self.frame_3)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setStyleSheet(u"color: rgb(0, 131, 130);")
@@ -97,13 +91,6 @@ class Ui_Form(object):
 
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.marque = QLineEdit(self.frame_3)
-        self.marque.setObjectName(u"marque")
-        self.marque.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
-
-        self.verticalLayout.addWidget(self.marque)
-
         self.matricule = QLineEdit(self.frame_3)
         self.matricule.setObjectName(u"matricule")
         self.matricule.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
@@ -111,12 +98,12 @@ class Ui_Form(object):
 
         self.verticalLayout.addWidget(self.matricule)
 
-        self.dispo = QLineEdit(self.frame_3)
-        self.dispo.setObjectName(u"dispo")
-        self.dispo.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
+        self.disponibilite = QComboBox(self.frame_3)
+        self.disponibilite.addItem("")
+        self.disponibilite.addItem("")
+        self.disponibilite.setObjectName(u"disponibilite")
 
-        self.verticalLayout.addWidget(self.dispo)
+        self.verticalLayout.addWidget(self.disponibilite)
 
         self.description = QTextEdit(self.frame_3)
         self.description.setObjectName(u"description")
@@ -169,10 +156,13 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.label.setText(QCoreApplication.translate("Form", u"Ajout Camion", None))
-        self.label_2.setText(QCoreApplication.translate("Form", u"Marque", None))
         self.label_4.setText(QCoreApplication.translate("Form", u"Matricule", None))
         self.label_5.setText(QCoreApplication.translate("Form", u"Disponibilit\u00e9", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"Description", None))
+        self.disponibilite.setItemText(0, QCoreApplication.translate("Form", u"Disponible", None))
+        self.disponibilite.setItemText(1, QCoreApplication.translate("Form", u"Non disponible", None))
+
+        self.disponibilite.setPlaceholderText(QCoreApplication.translate("Form", u"disponibilit\u00e9", None))
         self.fermer_ajout_camion.setText(QCoreApplication.translate("Form", u"fermer", None))
         self.ajouter_ajout_camion.setText(QCoreApplication.translate("Form", u"ajouter", None))
     # retranslateUi

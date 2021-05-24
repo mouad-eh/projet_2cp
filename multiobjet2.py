@@ -112,26 +112,26 @@ class Camion(MultiObjet):
         super(Camion, self).__init__(multiobjet_id)
         self.camion_id = camion_id
     @staticmethod
-    def getMultiObjetId(camion_id):# help to construct marchandise Object by only knowing marchandise_id-got from selection-
+    def getMultiObjetId(camion_id):# help to construct Camion Object by only knowing marchandise_id-got from selection-
         sql = "SELECT * FROM camion WHERE camion_id = %s"
         mycursor.execute(sql, (camion_id,))
         myresult = mycursor.fetchall()
         mydb.commit()
-        return myresult[0][1]
+        return myresult[0][2]
 
-    def inserer(self, marque, matricule, disponibilite, description):
+    def inserer(self, matricule, disponibilite, description):
         mo = MultiObjet(0)
         self.multi_objet_id = mo.inserer(description)
-        sql = "INSERT INTO camion (multi_objet_id, marque, matricule, disponibilite) VALUES (%s, %s, %s, %s)"
-        mycursor.execute(sql, (self.multi_objet_id, marque, matricule, disponibilite))
+        sql = "INSERT INTO camion (matricule, multi_objet_id, disponibilite) VALUES (%s, %s, %s)"
+        mycursor.execute(sql, (matricule, self.multi_objet_id, disponibilite))
         mydb.commit()
         return mycursor.lastrowid
 
-    def modifier(self, marque, matricule, disponibilite, description):
+    def modifier(self, matricule, disponibilite, description):
         mo = MultiObjet(self.multi_objet_id)
         mo.modifier(description)
-        sql = "UPDATE camion SET marque = %s, matricule = %s, disponibilite = %s where camion_id = %s"
-        mycursor.execute(sql, (marque, matricule, disponibilite, self.camion_id))
+        sql = "UPDATE camion SET matricule = %s, disponibilite = %s where camion_id = %s"
+        mycursor.execute(sql, (matricule, disponibilite, self.camion_id))
         mydb.commit()
 
     def supprimer(self):
