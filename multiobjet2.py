@@ -140,3 +140,51 @@ class Camion(MultiObjet):
         mydb.commit()
         mo = MultiObjet(self.multi_objet_id)
         mo.supprimer()
+
+class Emballage(MultiObjet):
+    def __init__(self, emballage_id, client_id, dossier_id, multi_objet_id):
+        super(Emballage, self).__init__(multi_objet_id)
+        self.emballage_id = emballage_id
+        self.client_id = client_id
+        self.dossier_id = dossier_id
+
+    @staticmethod
+    def getMultiObjetId(emballage_id):# help to construct Emballage Object by only knowing marchandise_id-got from selection-
+        # todo : i suppose to have static methods that can get client_id and dossier_id by only knowing names- got from line edits-
+        sql = "SELECT * FROM emballage WHERE emballage_id = %s"
+        mycursor.execute(sql, (emballage_id,))
+        myresult = mycursor.fetchall()
+        mydb.commit()
+        return myresult[0][11]
+
+    def inserer(self, num, num_emballage, genre_emballage, pieds, type_emballage,\
+                date_livraison, date_restitution, num_bon_facture_restitution, description):
+        mo = MultiObjet(0)
+        self.multi_objet_id = mo.inserer(description)
+        sql = "INSERT INTO emballage (client_id, dossier_id, num, num_emballage,\
+         genre_emballage, pieds, type_emballage, date_livraison, date_restitution,\
+          num_bon_facture_restitution, multi_objet_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        mycursor.execute(sql, (self.client_id, self.dossier_id, num, num_emballage,\
+                               genre_emballage, pieds, type_emballage, date_livraison, date_restitution,\
+                               num_bon_facture_restitution , self.multi_objet_id))
+        mydb.commit()
+        return mycursor.lastrowid
+
+    def modifier(self, num, num_emballage, genre_emballage, pieds, type_emballage,\
+                date_livraison, date_restitution, num_bon_facture_restitution, description):
+        mo = MultiObjet(self.multi_objet_id)
+        mo.modifier(description)
+        sql = "UPDATE emballage SET num = %s, num_emballage = %s,\
+         genre_emballage = %s, pieds = %s, type_emballage = %s, date_livraison = %s, date_restitution = %s,\
+          num_bon_facture_restitution = %s, multi_objet_id = %s WHERE emballage_id = %s"
+        mycursor.execute(sql, (num, num_emballage,\
+                               genre_emballage, pieds, type_emballage, date_livraison, date_restitution,\
+                               num_bon_facture_restitution , self.multi_objet_id, self.emballage_id))
+        mydb.commit()
+
+    def supprimer(self):
+        sql = "DELETE FROM emballage WHERE emballage_id = %s"
+        mycursor.execute(sql, (self.emballage_id,))
+        mydb.commit()
+        mo = MultiObjet(self.multi_objet_id)
+        mo.supprimer()
