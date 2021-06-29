@@ -1,0 +1,4478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">background-color:#DCDCDC	</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Ajout bon de sortie</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>510</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true">background-color:#DCDCDC	</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Declarant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="declarant">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3" colspan="2">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>N° Dossier</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLineEdit" name="num_dossier">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2">
+             <widget class="QLineEdit" name="date">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Agent</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4" colspan="2">
+             <widget class="QLineEdit" name="agent">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Transit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="transit">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="valider_ajout_bon_sortie">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+              </property>
+              <property name="text">
+               <string>Valider</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="fermer_ajout_bon_sortie">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/
+</string>
+              </property>
+              <property name="text">
+               <string>Fermer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>211</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">background-color:#DCDCDC	</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Ajout bon de visite</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>510</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true">background-color:#DCDCDC	</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Declarant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2" colspan="2">
+             <widget class="QLineEdit" name="declarant">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4" colspan="2">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>N° Dossier</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6">
+             <widget class="QLineEdit" name="num_dossier">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2">
+             <widget class="QLineEdit" name="date">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3" colspan="2">
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Agent</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5" colspan="2">
+             <widget class="QLineEdit" name="agent">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Transit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="transit">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="valider_ajout_bon_visite">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+              </property>
+              <property name="text">
+               <string>Valider</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="fermer_ajout_bon_visite">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/
+</string>
+              </property>
+              <property name="text">
+               <string>Fermer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="nednassim2001",
+    database="projet"
+)
+mycursor = mydb.cursor()
+
+class Bon:
+    def __init__(self, bon_id):
+        self.bon_id = bon_id
+
+    def inserer(self, declarant, num_dossier, date, agent, transit):
+        sql = "INSERT INTO bon (declarant, num_dossier, date, agent, transit) VALUES (%s, %s, %s, %s, %s)"
+        val = (declarant, num_dossier, date, agent, transit)
+        mycursor.execute(sql, val)
+        mydb.commit()
+        return mycursor.lastrowid
+
+    def modifier(self, declarant, num_dossier, date, agent, transit):
+        sql = "UPDATE bon SET declarant=%s, num_dossier=%s, date=%s, agent=%s, transit=%s where bon_id=%s"
+        val = (declarant, num_dossier, date, agent, transit, self.bon_id)
+        mycursor.execute(sql, val)
+        mydb.commit()
+
+    def supprimer(self):
+        sql = "DELETE FROM bon WHERE bon_id=%s"
+        mycursor.execute(sql, (self.bon_id,))
+        mydb.commit()
+
+class Bon_sortie(Bon):
+    def __init__(self, bon_sortie_id, bon_id):
+        super().__init__(bon_id)
+        self.bon_sortie_id = bon_sortie_id
+
+    @staticmethod
+    def getBonId(bon_sortie_id):
+        sql = "SELECT * FROM bon_sortie WHERE sortie_id=%s"
+        mycursor.execute(sql, (bon_sortie_id,))
+        myresult = mycursor.fetchall()
+        return myresult[0][1]
+
+    def inserer(self, declarant, num_dossier, date, agent, transit):
+        bon = Bon(0)
+        self.bon_id = bon.inserer(declarant, num_dossier, date, agent, transit)
+        sql = "INSERT INTO bon_sortie(bon_id) VALUES (%s)"
+        mycursor.execute(sql, (self.bon_id, ))
+        mydb.commit()
+        return mycursor.lastrowid
+
+
+    def modifier(self, declarant, num_dossier, date, agent, transit):
+        bon = Bon(self.bon_id) 
+        bon.modifier(declarant, num_dossier, date, agent, transit)
+        sql = "UPDATE bon_sortie SET bon_id=%s WHERE sortie_id=%s"        
+        mycursor.execute(sql, (bon.bon_id, self.bon_sortie_id))
+        mydb.commit()
+
+    def supprimer(self):
+        sql = "DELETE FROM bon_sortie WHERE sortie_id=%s"
+        mycursor.execute(sql, (self.bon_sortie_id,))
+        mydb.commit()
+        bon = Bon(self.bon_id) 
+        bon.supprimer()
+
+class Bon_visite(Bon):
+    def __init__(self, bon_visite_id, bon_id):
+        super().__init__(bon_id)
+        self.bon_visite_id = bon_visite_id
+
+    @staticmethod
+    def getBonId(bon_visite_id):
+        sql = "SELECT * FROM bon_visite WHERE visite_id=%s"
+        mycursor.execute(sql, (bon_visite_id,))
+        myresult = mycursor.fetchall()
+        return myresult[0][1]
+
+    def inserer(self, declarant, num_dossier, date, agent, transit):
+        bon = Bon(0)
+        self.bon_id = bon.inserer(declarant, num_dossier, date, agent, transit)
+        sql = "INSERT INTO bon_visite(bon_id) VALUES (%s)"
+        mycursor.execute(sql, (self.bon_id, ))
+        mydb.commit()
+        return mycursor.lastrowid
+
+    def modifier(self, declarant, num_dossier, date, agent, transit):
+        bon = Bon(self.bon_id) 
+        bon.modifier(declarant, num_dossier, date, agent, transit)
+        sql = "UPDATE bon_visite SET bon_id=%s WHERE visite_id=%s"
+        mycursor.execute(sql, (bon.bon_id, self.bon_visite_id))
+        mydb.commit()
+
+    def supprimer(self):
+        sql = "DELETE FROM bon_visite WHERE visite_id=%s"
+        mycursor.execute(sql, (self.bon_visite_id,))
+        mydb.commit()
+        bon = Bon(self.bon_id) 
+        bon.supprimer()
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>617</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Bon de sortie</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>510</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #2f3e46;</string>
+           </property>
+           <property name="text">
+            <string>N° Dossier</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="num_dossier">
+           <property name="styleSheet">
+            <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="bon_sortie_table">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255,255,255,0.9);
+selection-background-color: #a2d2ff;
+selection-color:#2f3e46;
+color: #2f3e46;
+border-radius: 	10px;
+</string>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>declarant</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>num_dossier</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>date</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>agent</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>transit</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>12</number>
+           </property>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="nouveau_bon_sortie">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+             </property>
+             <property name="text">
+              <string>Nouveau</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="modifier_bon_sortie">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+             </property>
+             <property name="text">
+              <string>Modifier</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="supprimer_bon_sortie">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/</string>
+             </property>
+             <property name="text">
+              <string>Supprimer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="fermer_bon_sortie">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/</string>
+             </property>
+             <property name="text">
+              <string>Fermer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Bon de visite</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>510</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #2f3e46;</string>
+           </property>
+           <property name="text">
+            <string>N° Dossier</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="num_dossier">
+           <property name="styleSheet">
+            <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="bon_visite_table">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255,255,255,0.9);
+selection-background-color: #a2d2ff;
+selection-color:#2f3e46;
+color: #2f3e46;
+border-radius: 	10px;
+</string>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>declarant</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>num_dossier</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>date</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>agent</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>transit</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>12</number>
+           </property>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="nouveau_bon_visite">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+             </property>
+             <property name="text">
+              <string>Nouveau</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="modifier_bon_visite">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+             </property>
+             <property name="text">
+              <string>Modifier</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="supprimer_bon_visite">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/</string>
+             </property>
+             <property name="text">
+              <string>Supprimer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="fermer_bon_visite">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/</string>
+             </property>
+             <property name="text">
+              <string>Fermer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+DROP DATABASE projet;
+CREATE DATABASE projet;
+USE projet;
+
+-- Entreprise
+CREATE TABLE entreprise (
+	  entreprise_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,	 
+	  nom VARCHAR(20) NOT NULL , 
+	  type VARCHAR(20) ,
+	  adresse VARCHAR(20) NOT NULL ,
+	  tel1 VARCHAR(20) ,
+	  tel2 VARCHAR(20) ,
+	  tel3 VARCHAR(20) ,
+	  mob1 VARCHAR(20) ,
+	  mob2 VARCHAR(20) ,
+	  mob3 VARCHAR(20) ,
+	  fax1 VARCHAR(20) ,
+	  fax2 VARCHAR(20) ,
+	  email VARCHAR(20) ,
+	  siteweb VARCHAR(20) ,
+	  observation VARCHAR(20) 
+);
+
+-- Documents
+CREATE TABLE document (
+	  document_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+      nbr_clients INT NOT NULL ,
+	  date_document DATE NOT NULL,
+	  date_exp_document DATE NOT NULL
+	
+);
+
+-- Mandat
+CREATE TABLE mandat (
+	  mandat_id INT NOT NULL  PRIMARY KEY,	 
+	  document_id INT,
+      	  FOREIGN KEY(document_id) REFERENCES document(document_id) ON UPDATE CASCADE
+);
+
+-- Gestion des clients
+CREATE TABLE client (
+  	  client_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,	
+	  entreprise_id INT ,
+	  FOREIGN KEY(entreprise_id) REFERENCES entreprise(entreprise_id) ON UPDATE CASCADE ,
+	  code_postal INT ,
+	  num_RC INT NOT NULL, 
+	  wilaya VARCHAR(20) , 
+	  statut_juridique VARCHAR(20) ,
+	  mandat_id INT NOT NULL,
+	  FOREIGN KEY(mandat_id) REFERENCES mandat(mandat_id) ON UPDATE CASCADE ,
+	  num_succursale VARCHAR(20) ,
+	  num_NIF VARCHAR(20) ,
+	  num_NIS VARCHAR(20) , 
+	  num_art_imposition VARCHAR(20) 
+);
+
+
+-- RC(registre de commerce)
+CREATE TABLE RC (
+	  rc_id INT NOT NULL  PRIMARY KEY,	 
+	  document_id  INT NOT NULL, 
+      	  FOREIGN KEY(document_id) REFERENCES document(document_id) ON UPDATE CASCADE
+);
+
+-- Fournisseur
+CREATE TABLE fournisseur (
+	  fournisseur_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,	 
+	  entreprise_id INT ,
+	  FOREIGN KEY(entreprise_id) REFERENCES entreprise(entreprise_id) ON UPDATE CASCADE
+);
+
+CREATE TABLE contact (
+	  contact_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  type VARCHAR(20) ,
+	  entreprise_id INT ,
+	  FOREIGN KEY(entreprise_id) REFERENCES entreprise(entreprise_id) ON UPDATE CASCADE
+);
+
+-- Pays
+CREATE TABLE pays (
+	  pays_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,	 
+	  code_pays INT , 
+	  libelle VARCHAR(20) 
+);
+
+-- Monnaie
+CREATE TABLE monnaie (
+	  monnaie_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,	 
+	  code_monnaie VARCHAR(20) ,
+	  libelle_monnaie VARCHAR(20) ,
+	  taux_change FLOAT 
+);
+
+-- MutliObjet
+CREATE TABLE multi_objet(
+	  multi_objet_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  description VARCHAR(140) -- added more chars to descripiton
+);
+
+-- Conteneur
+CREATE TABLE emballage (	
+	  multi_objet_id INT,
+	  FOREIGN KEY(multi_objet_id) REFERENCES multi_objet(multi_objet_id) ON UPDATE CASCADE ,
+	  client VARCHAR(20) ,
+	  num_dossier VARCHAR(20) , 
+	  emballage_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	  num_emballage VARCHAR(20) , 
+	  genre VARCHAR(20) ,
+	  type_emballage VARCHAR(20),
+	  date_livraison DATE ,
+	  date_restitution DATE ,
+	  num_bon_facture_restitution VARCHAR(20) 
+);
+
+-- Camion
+CREATE TABLE camion (
+	  camion_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	  multi_objet_id INT,
+	  FOREIGN KEY(multi_objet_id) REFERENCES multi_objet(multi_objet_id) ON UPDATE CASCADE ,
+	  disponibilite CHAR(1) 
+);
+
+-- Navire
+CREATE TABLE navire (
+	  navire_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  multi_objet_id INT,
+	  FOREIGN KEY(multi_objet_id) REFERENCES multi_objet(multi_objet_id) ON UPDATE CASCADE ,
+	  nom VARCHAR(20) 
+);
+
+-- Marchandise
+CREATE TABLE marchandise (
+	  marchandise_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  multi_objet_id INT,
+	  FOREIGN KEY(multi_objet_id) REFERENCES multi_objet(multi_objet_id) ON UPDATE CASCADE ,
+	  nature_marchandise VARCHAR(20) -- fixed a spelling mistake
+);
+
+-- Bureau_douanier
+CREATE TABLE bureau_douanier (
+	  bureau_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  code_bureau INT ,
+	  bureau_douane VARCHAR(20) 
+);
+
+-- Bon de commande
+CREATE TABLE bon_commande (
+	  bon_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	  date DATE , 
+	  document INT,
+	  FOREIGN KEY(document) REFERENCES document(document_id) ON UPDATE CASCADE ,
+	  quantite INT ,
+	  observation VARCHAR(20) ,
+	  fournisseur_id INT,
+	  FOREIGN KEY(fournisseur_id) REFERENCES fournisseur(fournisseur_id) ON UPDATE CASCADE 
+);
+
+-- Facture
+CREATE TABLE facture (
+	  facture_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	  num_facture INT , 
+	  date DATE ,
+	  num_dossier VARCHAR(20) , 
+	  client VARCHAR(20) ,
+	  num_declaration VARCHAR(20) ,
+	  fournisseur VARCHAR(20) , 
+	  montant FLOAT ,
+	  monnaie VARCHAR(20) ,
+	  num_titre_transport VARCHAR(20) ,
+	  nature_marchandise VARCHAR(20) 
+);
+
+
+CREATE TABLE prestation_debours (
+	  debours_prestation_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+ 	  debours_prestation VARCHAR(20) ,
+	  type VARCHAR(20) 
+);
+
+CREATE TABLE debours_prestation (
+	  debours_prestation_id INT ,
+          FOREIGN KEY(debours_prestation_id) REFERENCES prestation_debours(debours_prestation_id) ON UPDATE CASCADE ,
+	  facture_id INT,
+	  FOREIGN KEY(facture_id) REFERENCES facture(facture_id) ON UPDATE CASCADE ,
+	  montant FLOAT 	
+);
+
+-- Gestion de dossier
+CREATE TABLE informations_generales (
+	  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  num_dossier VARCHAR(20) , 
+	  client VARCHAR(20) ,
+	  ref_client_dossier VARCHAR(20) ,  
+	  sit_dossier VARCHAR(20) ,
+	  date_reception DATE ,
+	  lieu_reception VARCHAR(20) ,
+	  fournisseur VARCHAR(20) ,
+	  num_facture VARCHAR(20) , 
+	  montant FLOAT ,
+	  monnaie VARCHAR(5) ,
+	  nature_marchandise VARCHAR(20) ,
+	  nature_dossier VARCHAR(20) ,
+	  mode_transport VARCHAR(20) ,
+	  compagnie_transport VARCHAR(20) ,
+	  num_titre_transport VARCHAR(20) ,
+	  nbr_TC VARCHAR(20) , 
+	  navire VARCHAR(20) ,
+	  date_arrivee DATE ,
+	  date_main_levee DATE ,
+	  nbr_colis INT ,
+	  poids_brut INT ,
+	  lieu_entreposage VARCHAR(20) ,
+	  bureau_douane VARCHAR(20) , 
+	  receveur_douane VARCHAR(20) ,
+	  num_gros VARCHAR(20) , 
+	  num_article VARCHAR(20) , 
+	  S_G VARCHAR(20) ,
+	  date_echange DATE ,
+	  date_declaration DATE ,
+	  num_declaration VARCHAR(20) ,
+	  valeur_DA INT , 
+	  montant_droits_taxes INT , 
+	  date_visite_douane DATE ,
+	  date_liquidation DATE ,
+	  date_recevabilite_cheque DATE ,
+	  date_aquittement_droits_taxes DATE ,
+	  num_quittance_douane VARCHAR(20) , 
+	  date_bon_enlever DATE ,
+	  num_bon_enlever VARCHAR(20) , 
+	  date_livraison DATE ,
+	  lieu_livraison VARCHAR(20) ,
+	  parc_vide VARCHAR(20) ,
+	  observation_dynamique VARCHAR(50) ,
+	  declarant VARCHAR(20) ,
+	  observation_statique VARCHAR(50) 
+);
+
+
+-- Pesronne
+CREATE TABLE personne (
+	 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	 nom  VARCHAR(20) ,
+	 prenom VARCHAR(20) ,
+	 tel VARCHAR(20) ,
+	 email VARCHAR(20) ,
+	 adresse VARCHAR(20) 
+);
+-- Utilisateur
+CREATE TABLE utilisateur (
+	  utilisateur_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  personne_id INT,
+	  FOREIGN KEY(personne_id) REFERENCES personne(id) ON UPDATE CASCADE,
+	  identifiant VARCHAR(20),
+	  mot_de_passe VARCHAR(20) 
+);
+
+-- Declarant
+CREATE TABLE declarant (
+	  declarant_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  personne_id INT,
+	  FOREIGN KEY(personne_id) REFERENCES personne(id) ON UPDATE CASCADE,
+	  photo BLOB,
+	  badge_douane DATE ,
+	  nbr_J_V_1 FLOAT ,
+	  badge_police DATE ,
+	  nbr_J_V_2 FLOAT 
+);
+
+-- Chauffeur
+CREATE TABLE chauffeur (
+	  chauffeur_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  personne_id INT,
+	  FOREIGN KEY(personne_id) REFERENCES personne(id) ON UPDATE CASCADE
+);
+
+-- Douanier
+CREATE TABLE douanier (
+	  douanier_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  personne_id INT,
+	  FOREIGN KEY(personne_id) REFERENCES personne(id) ON UPDATE CASCADE
+);
+
+-- Expert
+CREATE TABLE expert (
+	  expert_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  personne_id INT,
+	  FOREIGN KEY(personne_id) REFERENCES personne(id) ON UPDATE CASCADE
+);
+
+-- Representant
+CREATE TABLE representant (
+	  representant_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    	  personne_id INT,
+ 	  FOREIGN KEY(personne_id) REFERENCES personne(id) ON UPDATE CASCADE,
+	  entreprise_id INT,
+	  FOREIGN KEY(entreprise_id) REFERENCES entreprise(entreprise_id) ON UPDATE CASCADE
+);
+
+
+
+CREATE TABLE grille_saisie (
+	  grille_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	  regime VARCHAR(20) ,
+	  douanier VARCHAR(20) , 
+	  bureau_douane VARCHAR(20) ,	 
+	  nbr_articles INT ,
+	  num_rep INT ,
+	  mode_paiement VARCHAR(20) ,
+	  fournisseur_client VARCHAR(20) ,
+	  adresse_fournisseur VARCHAR(20) ,
+	  pays_fournisseur VARCHAR(20) , 
+	  mode_livraison VARCHAR(20) ,
+	  mode_financement VARCHAR(20) ,
+	  type_operation VARCHAR(20) ,
+	  nature_transaction VARCHAR(20) ,
+	  relation_acheteur_vendeur VARCHAR(20) ,
+	  pays_provenance VARCHAR(20) , 
+	  transport_interieur VARCHAR(20) ,
+	  nature_declaration VARCHAR(20) ,
+	  type_manifeste VARCHAR(20) ,
+	  annee_gros INT ,
+	  num_gros INT ,
+	  num_art VARCHAR(20) ,
+	  S_G VARCHAR(1) ,
+	  type_dedouanement VARCHAR(20) ,
+	  nbr_colis INT ,
+	  poids_net FLOAT ,
+	  poids_brut FLOAT ,
+	  wilaya VARCHAR(20) ,
+	  agence VARCHAR(20) ,
+	  num_domiciliation_bancaire VARCHAR(20) ,
+	  date_domiciliation  DATE ,
+	  type_domiciliation  VARCHAR(20) ,
+	  bureau VARCHAR(20) ,
+	  annee INT ,
+	  num_declaration VARCHAR(20) ,
+	  regime_precedent VARCHAR(20) ,
+	  B_depart VARCHAR(20) ,
+	  B_arrivee VARCHAR(20) ,
+	  num VARCHAR(20) ,
+	  duree INT , 
+	  taux FLOAT ,
+	  montant_caution FLOAT ,
+	  lieu VARCHAR(20) 
+);
+
+-- Dossier
+CREATE TABLE dossier (
+	  dossier_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  informations_generales_id INT,
+	  FOREIGN KEY(informations_generales_id) REFERENCES informations_generales(id) ON UPDATE CASCADE , 
+	  grille_id INT,
+	  FOREIGN KEY(grille_id) REFERENCES grille_saisie(grille_id) ON UPDATE CASCADE
+);
+-- Bon de sorite
+CREATE TABLE bon (
+	  bon_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  declarant VARCHAR(20) ,
+	  num_dossier INT ,
+	  date DATE , 
+	  agent VARCHAR(20) ,
+	  transit VARCHAR(20) 
+);
+
+CREATE TABLE bon_sortie (
+	  sortie_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  bon_id INT ,
+	  FOREIGN KEY(bon_id) REFERENCES bon(bon_id) ON UPDATE CASCADE
+);
+-- Bon de visite
+CREATE TABLE bon_visite (
+	  visite_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  bon_id INT ,
+	  FOREIGN KEY(bon_id) REFERENCES bon(bon_id) ON UPDATE CASCADE
+);
+ 
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+from ui_bon_sortie import Ui_Form as Sortie_form
+from ui_ajout_bon_sortie import Ui_Form as Ajout_bon_sortie_form
+from ui_modifier_bon_sortie import Ui_Form as Modifier_bon_sortie_form
+
+from bon import *
+
+class AjouterSortieWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ajout_bon_sortie_form()
+        self.ui.setupUi(self)
+
+    def closeEvent(self, event):
+        self.ui.declarant.clear()
+        self.ui.num_dossier.clear()
+        self.ui.date.clear()
+        self.ui.agent.clear()
+        self.ui.transit.clear()
+        super(AjouterSortieWindow, self).closeEvent(event)
+
+class ModifierSortieWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.ui = Modifier_bon_sortie_form()
+        self.ui.setupUi(self)
+
+    def closeEvent(self, event):
+        self.ui.declarant.clear()
+        self.ui.num_dossier.clear()
+        self.ui.date.clear()
+        self.ui.agent.clear()
+        self.ui.transit.clear()
+        super(ModifierSortieWindow, self).closeEvent(event)
+
+class SortieWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.ui = Sortie_form()
+        self.ui.setupUi(self)
+        self.display_table("SELECT * FROM bon WHERE bon_id IN (SELECT bon_id FROM bon_sortie)")
+        self.selectedItems = None
+
+        #related_widgets
+        self.widget = AjouterSortieWindow()
+        self.widget2 = ModifierSortieWindow()
+
+        #push_button_connections
+#        self.ui.rechercher_bon_sortie.textChanged.connect(self.rechercher_bon_sortie)
+        self.ui.nouveau_bon_sortie.clicked.connect(self.widget.show)
+        self.ui.modifier_bon_sortie.clicked.connect(self.modifier_bon_sortie)
+        self.ui.supprimer_bon_sortie.clicked.connect(self.supprimer_bon_sortie)
+        self.ui.fermer_bon_sortie.clicked.connect(self.close)
+
+        #externel_push_button_connections
+        self.widget.ui.valider_ajout_bon_sortie.clicked.connect(self.ajouter_ajout_bon_sortie)
+        self.widget.ui.fermer_ajout_bon_sortie.clicked.connect(self.fermer_ajout_bon_sortie)
+        self.widget2.ui.valider_modifier_bon_sortie.clicked.connect(self.enregistrer_modifier_bon_sortie)
+        self.widget2.ui.fermer_modifier_bon_sortie.clicked.connect(self.fermer_modifier_bon_sortie)
+
+    def display_table(self, sql):
+        mycursor.execute(sql)
+        myresult = mycursor.fetchall()
+        mydb.commit()
+        row_count = len(myresult)
+        self.ui.bon_sortie_table.setRowCount(row_count)
+        for row in range(row_count):
+            self.ui.bon_sortie_table.setVerticalHeaderItem(row,QTableWidgetItem(str(myresult[row][0])))
+            self.ui.bon_sortie_table.setItem(row, 0, QTableWidgetItem(myresult[row][1]))
+            self.ui.bon_sortie_table.setItem(row, 1, QTableWidgetItem(str(myresult[row][2])))
+            self.ui.bon_sortie_table.setItem(row, 2, QTableWidgetItem(str(myresult[row][3])))
+            self.ui.bon_sortie_table.setItem(row, 3, QTableWidgetItem(myresult[row][4]))
+            self.ui.bon_sortie_table.setItem(row, 4, QTableWidgetItem(myresult[row][5]))
+    def rechercher_bon_sortie(self):
+        sql = "SELECT * FROM bon_sortie WHERE num_dossier LIKE '{}%'".format(self.ui.rechercher_bon_sortie.text())
+        self.display_table(sql)
+
+    def modifier_bon_sortie(self):
+        self.selectedItems = self.ui.bon_sortie_table.selectedItems()
+        if len(self.selectedItems) == 5:
+            self.widget2.show()
+            self.widget2.ui.declarant.insert(self.selectedItems[0].text())
+            self.widget2.ui.num_dossier.insert(self.selectedItems[1].text())
+            self.widget2.ui.date.insert(self.selectedItems[2].text())
+            self.widget2.ui.agent.insert(self.selectedItems[3].text())
+            self.widget2.ui.transit.insert(self.selectedItems[4].text())
+
+    def supprimer_bon_sortie(self):
+        selectedItems = self.ui.bon_sortie_table.selectedItems()
+        if len(selectedItems) >= 5:
+            for i in range(0, len(selectedItems), 5):
+                id = int(self.ui.bon_sortie_table.verticalHeaderItem(selectedItems[i].row()).text())
+                bon = Bon_sortie(id, Bon_sortie.getBonId(id))
+                bon.supprimer()
+                self.ui.bon_sortie_table.removeRow(selectedItems[i].row())
+
+    def ajouter_ajout_bon_sortie(self):
+        self.widget.show()
+        declarant = self.widget.ui.declarant.text()
+        num_dossier = self.widget.ui.num_dossier.text()
+        date = self.widget.ui.date.text()
+        agent = self.widget.ui.agent.text()
+        transit = self.widget.ui.transit.text()
+        bon = Bon_sortie(0, 0)
+        bon_sortie_id = bon.inserer(declarant, num_dossier, date, agent, transit)
+
+        # clear line edits after inserting
+        self.widget.ui.declarant.clear()
+        self.widget.ui.num_dossier.clear()
+        self.widget.ui.date.clear()
+        self.widget.ui.agent.clear()
+        self.widget.ui.transit.clear()
+
+
+        # displaying the added row
+        availableRow = self.ui.bon_sortie_table.rowCount()
+        self.ui.bon_sortie_table.insertRow(availableRow)
+        self.ui.bon_sortie_table.setVerticalHeaderItem(availableRow, QTableWidgetItem(str(bon_sortie_id)))
+        self.ui.bon_sortie_table.setItem(availableRow, 0, QTableWidgetItem(declarant))
+        self.ui.bon_sortie_table.setItem(availableRow, 1, QTableWidgetItem(num_dossier))
+        self.ui.bon_sortie_table.setItem(availableRow, 2, QTableWidgetItem(date))
+        self.ui.bon_sortie_table.setItem(availableRow, 3, QTableWidgetItem(agent))
+        self.ui.bon_sortie_table.setItem(availableRow, 4, QTableWidgetItem(transit))
+
+        self.widget.close()
+
+    def fermer_ajout_bon_sortie(self):
+        self.widget.ui.declarant.clear()
+        self.widget.ui.num_dossier.clear()
+        self.widget.ui.date.clear()
+        self.widget.ui.agent.clear()
+        self.widget.ui.transit.clear()
+
+        self.widget.close()
+
+    def enregistrer_modifier_bon_sortie(self):
+        current_bon_sortie_id = int(self.ui.bon_sortie_table.verticalHeaderItem(self.selectedItems[0].row()).text())
+        bon = Bon_sortie(current_bon_sortie_id, Bon_sortie.getBonId(current_bon_sortie_id))
+        bon.modifier(self.widget2.ui.declarant.text(), self.widget2.ui.num_dossier.text(), self.widget2.ui.date.text(), self.widget2.ui.agent.text(), self.widget2.ui.transit.text())
+        # update displayed table
+        self.selectedItems[0].setText(self.widget2.ui.declarant.text())
+        self.selectedItems[1].setText(self.widget2.ui.num_dossier.text())
+        self.selectedItems[2].setText(self.widget2.ui.date.text())
+        self.selectedItems[3].setText(self.widget2.ui.agent.text())
+        self.selectedItems[4].setText(self.widget2.ui.transit.text())
+
+        # clear line edits after modifying
+        self.widget2.ui.declarant.clear()
+        self.widget2.ui.num_dossier.clear()
+        self.widget2.ui.date.clear()
+        self.widget2.ui.agent.clear()
+        self.widget2.ui.transit.clear()
+
+        self.widget2.close()
+
+    def fermer_modifier_bon_sortie(self):
+        self.widget2.ui.declarant.clear()
+        self.widget2.ui.num_dossier.clear()
+        self.widget2.ui.date.clear()
+        self.widget2.ui.agent.clear()
+        self.widget2.ui.transit.clear()
+
+        self.widget2.close()
+
+if __name__ == "__main__" :
+    app = QApplication()
+    widget = SortieWindow()
+    widget.show()
+    app.exec()
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+from ui_bon_visite import Ui_Form as Visite_form
+from ui_ajout_bon_visite import Ui_Form as Ajout_bon_visite_form
+from ui_modifier_bon_visite import Ui_Form as Modifier_bon_visite_form
+
+from bon import *
+
+class AjouterVisiteWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ajout_bon_visite_form()
+        self.ui.setupUi(self)
+
+    def closeEvent(self, event):
+        self.ui.declarant.clear()
+        self.ui.num_dossier.clear()
+        self.ui.date.clear()
+        self.ui.agent.clear()
+        self.ui.transit.clear()
+        super(AjouterVisiteWindow, self).closeEvent(event)
+
+class ModifierVisiteWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.ui = Modifier_bon_visite_form()
+        self.ui.setupUi(self)
+
+    def closeEvent(self, event):
+        self.ui.declarant.clear()
+        self.ui.num_dossier.clear()
+        self.ui.date.clear()
+        self.ui.agent.clear()
+        self.ui.transit.clear()
+        super(ModifierVisiteWindow, self).closeEvent(event)
+
+class VisiteWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.ui = Visite_form()
+        self.ui.setupUi(self)
+        self.display_table("SELECT * FROM bon WHERE bon_id IN (SELECT bon_id FROM bon_visite)")
+        self.selectedItems = None
+
+        #related_widgets
+        self.widget = AjouterVisiteWindow()
+        self.widget2 = ModifierVisiteWindow()
+
+        #push_button_connections
+#        self.ui.rechercher_bon_visite.textChanged.connect(self.rechercher_bon_visite)
+        self.ui.nouveau_bon_visite.clicked.connect(self.widget.show)
+        self.ui.modifier_bon_visite.clicked.connect(self.modifier_bon_visite)
+        self.ui.supprimer_bon_visite.clicked.connect(self.supprimer_bon_visite)
+        self.ui.fermer_bon_visite.clicked.connect(self.close)
+
+        #externel_push_button_connections
+        self.widget.ui.valider_ajout_bon_visite.clicked.connect(self.ajouter_ajout_bon_visite)
+        self.widget.ui.fermer_ajout_bon_visite.clicked.connect(self.fermer_ajout_bon_visite)
+        self.widget2.ui.valider_modifier_bon_visite.clicked.connect(self.enregistrer_modifier_bon_visite)
+        self.widget2.ui.fermer_modifier_bon_visite.clicked.connect(self.fermer_modifier_bon_visite)
+
+    def display_table(self, sql):
+        mycursor.execute(sql)
+        myresult = mycursor.fetchall()
+        mydb.commit()
+        row_count = len(myresult)
+        self.ui.bon_visite_table.setRowCount(row_count)
+        for row in range(row_count):
+            self.ui.bon_visite_table.setVerticalHeaderItem(row,QTableWidgetItem(str(myresult[row][0])))
+            self.ui.bon_visite_table.setItem(row, 0, QTableWidgetItem(myresult[row][1]))
+            self.ui.bon_visite_table.setItem(row, 1, QTableWidgetItem(str(myresult[row][2])))
+            self.ui.bon_visite_table.setItem(row, 2, QTableWidgetItem(str(myresult[row][3])))
+            self.ui.bon_visite_table.setItem(row, 3, QTableWidgetItem(myresult[row][4]))
+            self.ui.bon_visite_table.setItem(row, 4, QTableWidgetItem(myresult[row][5]))
+    def rechercher_bon_visite(self):
+        sql = "SELECT * FROM bon_visite WHERE num_dossier LIKE '{}%'".format(self.ui.rechercher_bon_visite.text())
+        self.display_table(sql)
+
+    def modifier_bon_visite(self):
+        self.selectedItems = self.ui.bon_visite_table.selectedItems()
+        if len(self.selectedItems) == 5:
+            self.widget2.show()
+            self.widget2.ui.declarant.insert(self.selectedItems[0].text())
+            self.widget2.ui.num_dossier.insert(self.selectedItems[1].text())
+            self.widget2.ui.date.insert(self.selectedItems[2].text())
+            self.widget2.ui.agent.insert(self.selectedItems[3].text())
+            self.widget2.ui.transit.insert(self.selectedItems[4].text())
+
+    def supprimer_bon_visite(self):
+        selectedItems = self.ui.bon_visite_table.selectedItems()
+        if len(selectedItems) >= 5:
+            for i in range(0, len(selectedItems), 5):
+                id = int(self.ui.bon_visite_table.verticalHeaderItem(selectedItems[i].row()).text())
+                bon = Bon_visite(id, Bon_visite.getBonId(id))
+                bon.supprimer()
+                self.ui.bon_visite_table.removeRow(selectedItems[i].row())
+
+    def ajouter_ajout_bon_visite(self):
+        self.widget.show()
+        declarant = self.widget.ui.declarant.text()
+        num_dossier = self.widget.ui.num_dossier.text()
+        date = self.widget.ui.date.text()
+        agent = self.widget.ui.agent.text()
+        transit = self.widget.ui.transit.text()
+        bon = Bon_visite(0, 0)
+        bon_visite_id = bon.inserer(declarant, num_dossier, date, agent, transit)
+
+        # clear line edits after inserting
+        self.widget.ui.declarant.clear()
+        self.widget.ui.num_dossier.clear()
+        self.widget.ui.date.clear()
+        self.widget.ui.agent.clear()
+        self.widget.ui.transit.clear()
+
+
+        # displaying the added row
+        availableRow = self.ui.bon_visite_table.rowCount()
+        self.ui.bon_visite_table.insertRow(availableRow)
+        self.ui.bon_visite_table.setVerticalHeaderItem(availableRow, QTableWidgetItem(str(bon_visite_id)))
+        self.ui.bon_visite_table.setItem(availableRow, 0, QTableWidgetItem(declarant))
+        self.ui.bon_visite_table.setItem(availableRow, 1, QTableWidgetItem(num_dossier))
+        self.ui.bon_visite_table.setItem(availableRow, 2, QTableWidgetItem(date))
+        self.ui.bon_visite_table.setItem(availableRow, 3, QTableWidgetItem(agent))
+        self.ui.bon_visite_table.setItem(availableRow, 4, QTableWidgetItem(transit))
+
+        self.widget.close()
+
+    def fermer_ajout_bon_visite(self):
+        self.widget.ui.declarant.clear()
+        self.widget.ui.num_dossier.clear()
+        self.widget.ui.date.clear()
+        self.widget.ui.agent.clear()
+        self.widget.ui.transit.clear()
+
+        self.widget.close()
+
+    def enregistrer_modifier_bon_visite(self):
+        current_bon_visite_id = int(self.ui.bon_visite_table.verticalHeaderItem(self.selectedItems[0].row()).text())
+        bon = Bon_visite(current_bon_visite_id, Bon_visite.getBonId(current_bon_visite_id))
+        bon.modifier(self.widget2.ui.declarant.text(), self.widget2.ui.num_dossier.text(), self.widget2.ui.date.text(), self.widget2.ui.agent.text(), self.widget2.ui.transit.text())
+        # update displayed table
+        self.selectedItems[0].setText(self.widget2.ui.declarant.text())
+        self.selectedItems[1].setText(self.widget2.ui.num_dossier.text())
+        self.selectedItems[2].setText(self.widget2.ui.date.text())
+        self.selectedItems[3].setText(self.widget2.ui.agent.text())
+        self.selectedItems[4].setText(self.widget2.ui.transit.text())
+
+        # clear line edits after modifying
+        self.widget2.ui.declarant.clear()
+        self.widget2.ui.num_dossier.clear()
+        self.widget2.ui.date.clear()
+        self.widget2.ui.agent.clear()
+        self.widget2.ui.transit.clear()
+
+        self.widget2.close()
+
+    def fermer_modifier_bon_visite(self):
+        self.widget2.ui.declarant.clear()
+        self.widget2.ui.num_dossier.clear()
+        self.widget2.ui.date.clear()
+        self.widget2.ui.agent.clear()
+        self.widget2.ui.transit.clear()
+
+        self.widget2.close()
+
+if __name__ == "__main__" :
+    app = QApplication()
+    widget = VisiteWindow()
+    widget.show()
+    app.exec()
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>211</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">background-color:#DCDCDC	</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Modifier bon de sortie</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>510</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true">background-color:#DCDCDC	</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_8">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Declarant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="declarant">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3" colspan="2">
+             <widget class="QLabel" name="label_9">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>N° Dossier</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLineEdit" name="num_dossier">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2">
+             <widget class="QLineEdit" name="date">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="label_11">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Agent</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4" colspan="2">
+             <widget class="QLineEdit" name="agent">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="label_12">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Transit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="transit">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="1" column="0">
+             <widget class="QPushButton" name="valider_modifier_bon_sortie">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+              </property>
+              <property name="text">
+               <string>Valider</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="fermer_modifier_bon_sortie">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/
+</string>
+              </property>
+              <property name="text">
+               <string>Fermer</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">background-color:#DCDCDC	</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>9</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Modifier bon de visite</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>510</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true">background-color:#DCDCDC	</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Declarant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="declarant">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3" colspan="2">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>N° Dossier</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLineEdit" name="num_dossier">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2">
+             <widget class="QLineEdit" name="date">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Agent</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4" colspan="2">
+             <widget class="QLineEdit" name="agent">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2f3e46;</string>
+              </property>
+              <property name="text">
+               <string>Transit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="transit">
+              <property name="styleSheet">
+               <string notr="true">border : 1px solid #2f3e46;
+border-radius:10px;
+padding: 3px;
+background-color: white;
+color: #2f3e46;
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="valider_modifier_bon_visite">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {width: 65px;
+background-color: white;
+border: 2px solid #3bb273;
+color: #3bb273;
+padding: 6px;
+border-radius: 10px;}
+
+QPushButton:hover {background-color: #3bb273;color: white;}
+QPushButton:pressed { margin: 1px; }
+</string>
+              </property>
+              <property name="text">
+               <string>Valider</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="fermer_modifier_bon_visite">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {background-color: white;
+border: 2px solid #ee2e31;
+color: #ee2e31;
+padding: 5px;
+border-radius: 10px;}
+QPushButton:hover {
+background-color: #ee2e31;
+color: white;
+}
+QPushButton:pressed{
+margin: 1px;
+}
+/*#ee2e31*/
+</string>
+              </property>
+              <property name="text">
+               <string>Fermer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'ajout_bon_sortiebbnUFY.ui'
+##
+## Created by: Qt User Interface Compiler version 6.0.4
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(493, 213)
+        self.verticalLayout = QVBoxLayout(Form)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.frame_2 = QFrame(Form)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_3 = QFrame(self.frame_2)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(9, 9, 9, 9)
+        self.label_2 = QLabel(self.frame_3)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setFamily(u"Segoe UI")
+        font.setPointSize(9)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(510, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_2.addWidget(self.frame_3)
+
+        self.frame = QFrame(self.frame_2)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setSpacing(6)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout = QGridLayout(self.frame_4)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_3 = QLabel(self.frame_4)
+        self.label_3.setObjectName(u"label_3")
+        font1 = QFont()
+        font1.setBold(True)
+        self.label_3.setFont(font1)
+        self.label_3.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_3, 0, 0, 1, 2)
+
+        self.declarant = QLineEdit(self.frame_4)
+        self.declarant.setObjectName(u"declarant")
+        self.declarant.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.declarant, 0, 2, 1, 1)
+
+        self.label_5 = QLabel(self.frame_4)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_5, 0, 3, 1, 2)
+
+        self.num_dossier = QLineEdit(self.frame_4)
+        self.num_dossier.setObjectName(u"num_dossier")
+        self.num_dossier.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.num_dossier, 0, 5, 1, 1)
+
+        self.label_6 = QLabel(self.frame_4)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_6, 1, 0, 1, 1)
+
+        self.date = QLineEdit(self.frame_4)
+        self.date.setObjectName(u"date")
+        self.date.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.date, 1, 1, 1, 2)
+
+        self.label_7 = QLabel(self.frame_4)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setFont(font1)
+        self.label_7.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_7, 1, 3, 1, 1)
+
+        self.agent = QLineEdit(self.frame_4)
+        self.agent.setObjectName(u"agent")
+        self.agent.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.agent, 1, 4, 1, 2)
+
+        self.label_4 = QLabel(self.frame_4)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font1)
+        self.label_4.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 1)
+
+        self.transit = QLineEdit(self.frame_4)
+        self.transit.setObjectName(u"transit")
+        self.transit.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.transit, 2, 2, 1, 1)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_4)
+
+        self.frame_5 = QFrame(self.frame)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_3 = QVBoxLayout(self.frame_5)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.valider_ajout_bon_sortie = QPushButton(self.frame_5)
+        self.valider_ajout_bon_sortie.setObjectName(u"valider_ajout_bon_sortie")
+        self.valider_ajout_bon_sortie.setFont(font)
+        self.valider_ajout_bon_sortie.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.valider_ajout_bon_sortie)
+
+        self.fermer_ajout_bon_sortie = QPushButton(self.frame_5)
+        self.fermer_ajout_bon_sortie.setObjectName(u"fermer_ajout_bon_sortie")
+        self.fermer_ajout_bon_sortie.setFont(font)
+        self.fermer_ajout_bon_sortie.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.fermer_ajout_bon_sortie)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_5)
+
+
+        self.verticalLayout_2.addWidget(self.frame)
+
+
+        self.verticalLayout.addWidget(self.frame_2)
+
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"Ajout bon de sortie", None))
+        self.label_3.setText(QCoreApplication.translate("Form", u"Declarant", None))
+        self.label_5.setText(QCoreApplication.translate("Form", u"N\u00b0 Dossier", None))
+        self.label_6.setText(QCoreApplication.translate("Form", u"Date", None))
+        self.label_7.setText(QCoreApplication.translate("Form", u"Agent", None))
+        self.label_4.setText(QCoreApplication.translate("Form", u"Transit", None))
+        self.valider_ajout_bon_sortie.setText(QCoreApplication.translate("Form", u"Valider", None))
+        self.fermer_ajout_bon_sortie.setText(QCoreApplication.translate("Form", u"Fermer", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'ajout_bon_visiteJeUZjB.ui'
+##
+## Created by: Qt User Interface Compiler version 6.0.4
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(493, 211)
+        self.verticalLayout = QVBoxLayout(Form)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.frame_2 = QFrame(Form)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_3 = QFrame(self.frame_2)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(9, 9, 9, 9)
+        self.label_2 = QLabel(self.frame_3)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setFamily(u"Segoe UI")
+        font.setPointSize(9)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(510, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_2.addWidget(self.frame_3)
+
+        self.frame = QFrame(self.frame_2)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout = QGridLayout(self.frame_4)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_3 = QLabel(self.frame_4)
+        self.label_3.setObjectName(u"label_3")
+        font1 = QFont()
+        font1.setBold(True)
+        self.label_3.setFont(font1)
+        self.label_3.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_3, 0, 0, 1, 2)
+
+        self.declarant = QLineEdit(self.frame_4)
+        self.declarant.setObjectName(u"declarant")
+        self.declarant.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.declarant, 0, 2, 1, 2)
+
+        self.label_5 = QLabel(self.frame_4)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_5, 0, 4, 1, 2)
+
+        self.num_dossier = QLineEdit(self.frame_4)
+        self.num_dossier.setObjectName(u"num_dossier")
+        self.num_dossier.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.num_dossier, 0, 6, 1, 1)
+
+        self.label_6 = QLabel(self.frame_4)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_6, 1, 0, 1, 1)
+
+        self.date = QLineEdit(self.frame_4)
+        self.date.setObjectName(u"date")
+        self.date.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.date, 1, 1, 1, 2)
+
+        self.label_7 = QLabel(self.frame_4)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setFont(font1)
+        self.label_7.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_7, 1, 3, 1, 2)
+
+        self.agent = QLineEdit(self.frame_4)
+        self.agent.setObjectName(u"agent")
+        self.agent.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.agent, 1, 5, 1, 2)
+
+        self.label_4 = QLabel(self.frame_4)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font1)
+        self.label_4.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 2)
+
+        self.transit = QLineEdit(self.frame_4)
+        self.transit.setObjectName(u"transit")
+        self.transit.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.transit, 2, 2, 1, 1)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_4)
+
+        self.frame_5 = QFrame(self.frame)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_3 = QVBoxLayout(self.frame_5)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.valider_ajout_bon_visite = QPushButton(self.frame_5)
+        self.valider_ajout_bon_visite.setObjectName(u"valider_ajout_bon_visite")
+        self.valider_ajout_bon_visite.setFont(font)
+        self.valider_ajout_bon_visite.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.valider_ajout_bon_visite)
+
+        self.fermer_ajout_bon_visite = QPushButton(self.frame_5)
+        self.fermer_ajout_bon_visite.setObjectName(u"fermer_ajout_bon_visite")
+        self.fermer_ajout_bon_visite.setFont(font)
+        self.fermer_ajout_bon_visite.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.fermer_ajout_bon_visite)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_5)
+
+
+        self.verticalLayout_2.addWidget(self.frame)
+
+
+        self.verticalLayout.addWidget(self.frame_2)
+
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"Ajout bon de visite", None))
+        self.label_3.setText(QCoreApplication.translate("Form", u"Declarant", None))
+        self.label_5.setText(QCoreApplication.translate("Form", u"N\u00b0 Dossier", None))
+        self.label_6.setText(QCoreApplication.translate("Form", u"Date", None))
+        self.label_7.setText(QCoreApplication.translate("Form", u"Agent", None))
+        self.label_4.setText(QCoreApplication.translate("Form", u"Transit", None))
+        self.valider_ajout_bon_visite.setText(QCoreApplication.translate("Form", u"Valider", None))
+        self.fermer_ajout_bon_visite.setText(QCoreApplication.translate("Form", u"Fermer", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'bon_sortieguHUgW.ui'
+##
+## Created by: Qt User Interface Compiler version 6.0.4
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(617, 325)
+        self.gridLayout_2 = QGridLayout(Form)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, -1)
+        self.frame = QFrame(Form)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_3 = QFrame(self.frame)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(9, 9, 9, 9)
+        self.label_2 = QLabel(self.frame_3)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setFamily(u"Segoe UI")
+        font.setPointSize(9)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(510, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_2.addWidget(self.frame_3)
+
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout = QGridLayout(self.frame_4)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_5 = QLabel(self.frame_4)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_5, 0, 0, 1, 1)
+
+        self.num_dossier = QLineEdit(self.frame_4)
+        self.num_dossier.setObjectName(u"num_dossier")
+        self.num_dossier.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.num_dossier, 0, 1, 1, 1)
+
+
+        self.verticalLayout_2.addWidget(self.frame_4)
+
+        self.frame_2 = QFrame(self.frame)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame_2)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(9, 9, 9, 9)
+        self.bon_sortie_table = QTableWidget(self.frame_2)
+        if (self.bon_sortie_table.columnCount() < 5):
+            self.bon_sortie_table.setColumnCount(5)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.bon_sortie_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.bon_sortie_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.bon_sortie_table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.bon_sortie_table.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.bon_sortie_table.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        self.bon_sortie_table.setObjectName(u"bon_sortie_table")
+        self.bon_sortie_table.setFont(font)
+        self.bon_sortie_table.setStyleSheet(u"background-color: rgba(255,255,255,0.9);\n"
+"selection-background-color: #a2d2ff;\n"
+"selection-color:#2f3e46;\n"
+"color: #2f3e46;\n"
+"border-radius: 	10px;\n"
+"")
+        self.bon_sortie_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.bon_sortie_table.setAlternatingRowColors(False)
+        self.bon_sortie_table.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.bon_sortie_table.verticalHeader().setVisible(False)
+
+        self.horizontalLayout_2.addWidget(self.bon_sortie_table)
+
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setSpacing(12)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.nouveau_bon_sortie = QPushButton(self.frame_2)
+        self.nouveau_bon_sortie.setObjectName(u"nouveau_bon_sortie")
+        self.nouveau_bon_sortie.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.nouveau_bon_sortie)
+
+        self.modifier_bon_sortie = QPushButton(self.frame_2)
+        self.modifier_bon_sortie.setObjectName(u"modifier_bon_sortie")
+        self.modifier_bon_sortie.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.modifier_bon_sortie)
+
+        self.supprimer_bon_sortie = QPushButton(self.frame_2)
+        self.supprimer_bon_sortie.setObjectName(u"supprimer_bon_sortie")
+        self.supprimer_bon_sortie.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/")
+
+        self.verticalLayout_3.addWidget(self.supprimer_bon_sortie)
+
+        self.fermer_bon_sortie = QPushButton(self.frame_2)
+        self.fermer_bon_sortie.setObjectName(u"fermer_bon_sortie")
+        self.fermer_bon_sortie.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/")
+
+        self.verticalLayout_3.addWidget(self.fermer_bon_sortie)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_2)
+
+
+        self.horizontalLayout_2.addLayout(self.verticalLayout_3)
+
+
+        self.verticalLayout_2.addWidget(self.frame_2)
+
+
+        self.gridLayout_2.addWidget(self.frame, 0, 0, 1, 1)
+
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"Bon de sortie", None))
+        self.label_5.setText(QCoreApplication.translate("Form", u"N\u00b0 Dossier", None))
+        ___qtablewidgetitem = self.bon_sortie_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"declarant", None));
+        ___qtablewidgetitem1 = self.bon_sortie_table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("Form", u"num_dossier", None));
+        ___qtablewidgetitem2 = self.bon_sortie_table.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("Form", u"date", None));
+        ___qtablewidgetitem3 = self.bon_sortie_table.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("Form", u"agent", None));
+        ___qtablewidgetitem4 = self.bon_sortie_table.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("Form", u"transit", None));
+        self.nouveau_bon_sortie.setText(QCoreApplication.translate("Form", u"Nouveau", None))
+        self.modifier_bon_sortie.setText(QCoreApplication.translate("Form", u"Modifier", None))
+        self.supprimer_bon_sortie.setText(QCoreApplication.translate("Form", u"Supprimer", None))
+        self.fermer_bon_sortie.setText(QCoreApplication.translate("Form", u"Fermer", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'bon_visiteiFbeRq.ui'
+##
+## Created by: Qt User Interface Compiler version 6.0.4
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(616, 323)
+        self.gridLayout_2 = QGridLayout(Form)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame = QFrame(Form)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_3 = QFrame(self.frame)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(9, 9, 9, 9)
+        self.label_2 = QLabel(self.frame_3)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setFamily(u"Segoe UI")
+        font.setPointSize(9)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(510, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_2.addWidget(self.frame_3)
+
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout = QGridLayout(self.frame_4)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_5 = QLabel(self.frame_4)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_5, 0, 0, 1, 1)
+
+        self.num_dossier = QLineEdit(self.frame_4)
+        self.num_dossier.setObjectName(u"num_dossier")
+        self.num_dossier.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.num_dossier, 0, 1, 1, 1)
+
+
+        self.verticalLayout_2.addWidget(self.frame_4)
+
+        self.frame_2 = QFrame(self.frame)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame_2)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(9, 9, 9, 9)
+        self.bon_visite_table = QTableWidget(self.frame_2)
+        if (self.bon_visite_table.columnCount() < 5):
+            self.bon_visite_table.setColumnCount(5)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.bon_visite_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.bon_visite_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.bon_visite_table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.bon_visite_table.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.bon_visite_table.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        self.bon_visite_table.setObjectName(u"bon_visite_table")
+        self.bon_visite_table.setFont(font)
+        self.bon_visite_table.setStyleSheet(u"background-color: rgba(255,255,255,0.9);\n"
+"selection-background-color: #a2d2ff;\n"
+"selection-color:#2f3e46;\n"
+"color: #2f3e46;\n"
+"border-radius: 	10px;\n"
+"")
+        self.bon_visite_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.bon_visite_table.setAlternatingRowColors(False)
+        self.bon_visite_table.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.bon_visite_table.verticalHeader().setVisible(False)
+
+        self.horizontalLayout_2.addWidget(self.bon_visite_table)
+
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setSpacing(12)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.nouveau_bon_visite = QPushButton(self.frame_2)
+        self.nouveau_bon_visite.setObjectName(u"nouveau_bon_visite")
+        self.nouveau_bon_visite.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.nouveau_bon_visite)
+
+        self.modifier_bon_visite = QPushButton(self.frame_2)
+        self.modifier_bon_visite.setObjectName(u"modifier_bon_visite")
+        self.modifier_bon_visite.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.modifier_bon_visite)
+
+        self.supprimer_bon_visite = QPushButton(self.frame_2)
+        self.supprimer_bon_visite.setObjectName(u"supprimer_bon_visite")
+        self.supprimer_bon_visite.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/")
+
+        self.verticalLayout_3.addWidget(self.supprimer_bon_visite)
+
+        self.fermer_bon_visite = QPushButton(self.frame_2)
+        self.fermer_bon_visite.setObjectName(u"fermer_bon_visite")
+        self.fermer_bon_visite.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/")
+
+        self.verticalLayout_3.addWidget(self.fermer_bon_visite)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_2)
+
+
+        self.horizontalLayout_2.addLayout(self.verticalLayout_3)
+
+
+        self.verticalLayout_2.addWidget(self.frame_2)
+
+
+        self.gridLayout_2.addWidget(self.frame, 0, 0, 1, 1)
+
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"Bon de visite", None))
+        self.label_5.setText(QCoreApplication.translate("Form", u"N\u00b0 Dossier", None))
+        ___qtablewidgetitem = self.bon_visite_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"declarant", None));
+        ___qtablewidgetitem1 = self.bon_visite_table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("Form", u"num_dossier", None));
+        ___qtablewidgetitem2 = self.bon_visite_table.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("Form", u"date", None));
+        ___qtablewidgetitem3 = self.bon_visite_table.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("Form", u"agent", None));
+        ___qtablewidgetitem4 = self.bon_visite_table.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("Form", u"transit", None));
+        self.nouveau_bon_visite.setText(QCoreApplication.translate("Form", u"Nouveau", None))
+        self.modifier_bon_visite.setText(QCoreApplication.translate("Form", u"Modifier", None))
+        self.supprimer_bon_visite.setText(QCoreApplication.translate("Form", u"Supprimer", None))
+        self.fermer_bon_visite.setText(QCoreApplication.translate("Form", u"Fermer", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'modifier_bon_sortieEvkOLk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.0.4
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(492, 211)
+        self.gridLayout_2 = QGridLayout(Form)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_2 = QFrame(Form)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_3 = QFrame(self.frame_2)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(9, 9, 9, 9)
+        self.label_2 = QLabel(self.frame_3)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setFamily(u"Segoe UI")
+        font.setPointSize(9)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(510, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_2.addWidget(self.frame_3)
+
+        self.frame = QFrame(self.frame_2)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setSpacing(6)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout_3 = QGridLayout(self.frame_4)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.label_8 = QLabel(self.frame_4)
+        self.label_8.setObjectName(u"label_8")
+        font1 = QFont()
+        font1.setBold(True)
+        self.label_8.setFont(font1)
+        self.label_8.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout_3.addWidget(self.label_8, 0, 0, 1, 2)
+
+        self.declarant = QLineEdit(self.frame_4)
+        self.declarant.setObjectName(u"declarant")
+        self.declarant.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout_3.addWidget(self.declarant, 0, 2, 1, 1)
+
+        self.label_9 = QLabel(self.frame_4)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setFont(font)
+        self.label_9.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout_3.addWidget(self.label_9, 0, 3, 1, 2)
+
+        self.num_dossier = QLineEdit(self.frame_4)
+        self.num_dossier.setObjectName(u"num_dossier")
+        self.num_dossier.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout_3.addWidget(self.num_dossier, 0, 5, 1, 1)
+
+        self.label_10 = QLabel(self.frame_4)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setFont(font)
+        self.label_10.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout_3.addWidget(self.label_10, 1, 0, 1, 1)
+
+        self.date = QLineEdit(self.frame_4)
+        self.date.setObjectName(u"date")
+        self.date.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout_3.addWidget(self.date, 1, 1, 1, 2)
+
+        self.label_11 = QLabel(self.frame_4)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setFont(font1)
+        self.label_11.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout_3.addWidget(self.label_11, 1, 3, 1, 1)
+
+        self.agent = QLineEdit(self.frame_4)
+        self.agent.setObjectName(u"agent")
+        self.agent.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout_3.addWidget(self.agent, 1, 4, 1, 2)
+
+        self.label_12 = QLabel(self.frame_4)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setFont(font1)
+        self.label_12.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout_3.addWidget(self.label_12, 2, 0, 1, 2)
+
+        self.transit = QLineEdit(self.frame_4)
+        self.transit.setObjectName(u"transit")
+        self.transit.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout_3.addWidget(self.transit, 2, 2, 1, 1)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_4)
+
+        self.frame_5 = QFrame(self.frame)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.gridLayout_4 = QGridLayout(self.frame_5)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.valider_modifier_bon_sortie = QPushButton(self.frame_5)
+        self.valider_modifier_bon_sortie.setObjectName(u"valider_modifier_bon_sortie")
+        self.valider_modifier_bon_sortie.setFont(font)
+        self.valider_modifier_bon_sortie.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.gridLayout_4.addWidget(self.valider_modifier_bon_sortie, 1, 0, 1, 1)
+
+        self.fermer_modifier_bon_sortie = QPushButton(self.frame_5)
+        self.fermer_modifier_bon_sortie.setObjectName(u"fermer_modifier_bon_sortie")
+        self.fermer_modifier_bon_sortie.setFont(font)
+        self.fermer_modifier_bon_sortie.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/\n"
+"")
+
+        self.gridLayout_4.addWidget(self.fermer_modifier_bon_sortie, 2, 0, 1, 1)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_4.addItem(self.verticalSpacer, 0, 0, 1, 1)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_5)
+
+
+        self.verticalLayout_2.addWidget(self.frame)
+
+
+        self.gridLayout_2.addWidget(self.frame_2, 0, 0, 1, 1)
+
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"Modifier bon de sortie", None))
+        self.label_8.setText(QCoreApplication.translate("Form", u"Declarant", None))
+        self.label_9.setText(QCoreApplication.translate("Form", u"N\u00b0 Dossier", None))
+        self.label_10.setText(QCoreApplication.translate("Form", u"Date", None))
+        self.date.setText("")
+        self.label_11.setText(QCoreApplication.translate("Form", u"Agent", None))
+        self.label_12.setText(QCoreApplication.translate("Form", u"Transit", None))
+        self.valider_modifier_bon_sortie.setText(QCoreApplication.translate("Form", u"Valider", None))
+        self.fermer_modifier_bon_sortie.setText(QCoreApplication.translate("Form", u"Fermer", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'modifier_bon_visitevvKadA.ui'
+##
+## Created by: Qt User Interface Compiler version 6.0.4
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(490, 210)
+        self.gridLayout_2 = QGridLayout(Form)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_2 = QFrame(Form)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_3 = QFrame(self.frame_2)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(9, 9, 9, 9)
+        self.label_2 = QLabel(self.frame_3)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setFamily(u"Segoe UI")
+        font.setPointSize(9)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"background-color: #2f3e40; /*#2f3e46,1a535c;1d3557;233d4d*/\n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(510, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_2.addWidget(self.frame_3)
+
+        self.frame = QFrame(self.frame_2)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setSpacing(6)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"background-color:#DCDCDC	")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout = QGridLayout(self.frame_4)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_3 = QLabel(self.frame_4)
+        self.label_3.setObjectName(u"label_3")
+        font1 = QFont()
+        font1.setBold(True)
+        self.label_3.setFont(font1)
+        self.label_3.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_3, 0, 0, 1, 2)
+
+        self.declarant = QLineEdit(self.frame_4)
+        self.declarant.setObjectName(u"declarant")
+        self.declarant.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.declarant, 0, 2, 1, 1)
+
+        self.label_5 = QLabel(self.frame_4)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_5, 0, 3, 1, 2)
+
+        self.num_dossier = QLineEdit(self.frame_4)
+        self.num_dossier.setObjectName(u"num_dossier")
+        self.num_dossier.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.num_dossier, 0, 5, 1, 1)
+
+        self.label_6 = QLabel(self.frame_4)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_6, 1, 0, 1, 1)
+
+        self.date = QLineEdit(self.frame_4)
+        self.date.setObjectName(u"date")
+        self.date.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.date, 1, 1, 1, 2)
+
+        self.label_7 = QLabel(self.frame_4)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setFont(font1)
+        self.label_7.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_7, 1, 3, 1, 1)
+
+        self.agent = QLineEdit(self.frame_4)
+        self.agent.setObjectName(u"agent")
+        self.agent.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.agent, 1, 4, 1, 2)
+
+        self.label_4 = QLabel(self.frame_4)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font1)
+        self.label_4.setStyleSheet(u"color: #2f3e46;")
+
+        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 2)
+
+        self.transit = QLineEdit(self.frame_4)
+        self.transit.setObjectName(u"transit")
+        self.transit.setStyleSheet(u"border : 1px solid #2f3e46;\n"
+"border-radius:10px;\n"
+"padding: 3px;\n"
+"background-color: white;\n"
+"color: #2f3e46;\n"
+"")
+
+        self.gridLayout.addWidget(self.transit, 2, 2, 1, 1)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_4)
+
+        self.frame_5 = QFrame(self.frame)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_3 = QVBoxLayout(self.frame_5)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.valider_modifier_bon_visite = QPushButton(self.frame_5)
+        self.valider_modifier_bon_visite.setObjectName(u"valider_modifier_bon_visite")
+        self.valider_modifier_bon_visite.setFont(font)
+        self.valider_modifier_bon_visite.setStyleSheet(u"QPushButton {width: 65px;\n"
+"background-color: white;\n"
+"border: 2px solid #3bb273;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border-radius: 10px;}\n"
+"\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.valider_modifier_bon_visite)
+
+        self.fermer_modifier_bon_visite = QPushButton(self.frame_5)
+        self.fermer_modifier_bon_visite.setObjectName(u"fermer_modifier_bon_visite")
+        self.fermer_modifier_bon_visite.setFont(font)
+        self.fermer_modifier_bon_visite.setStyleSheet(u"QPushButton {background-color: white;\n"
+"border: 2px solid #ee2e31;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border-radius: 10px;}\n"
+"QPushButton:hover {\n"
+"background-color: #ee2e31;\n"
+"color: white;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"margin: 1px;\n"
+"}\n"
+"/*#ee2e31*/\n"
+"")
+
+        self.verticalLayout_3.addWidget(self.fermer_modifier_bon_visite)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_5)
+
+
+        self.verticalLayout_2.addWidget(self.frame)
+
+
+        self.gridLayout_2.addWidget(self.frame_2, 0, 0, 1, 1)
+
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"Modifier bon de visite", None))
+        self.label_3.setText(QCoreApplication.translate("Form", u"Declarant", None))
+        self.label_5.setText(QCoreApplication.translate("Form", u"N\u00b0 Dossier", None))
+        self.label_6.setText(QCoreApplication.translate("Form", u"Date", None))
+        self.label_7.setText(QCoreApplication.translate("Form", u"Agent", None))
+        self.label_4.setText(QCoreApplication.translate("Form", u"Transit", None))
+        self.valider_modifier_bon_visite.setText(QCoreApplication.translate("Form", u"Valider", None))
+        self.fermer_modifier_bon_visite.setText(QCoreApplication.translate("Form", u"Fermer", None))
+    # retranslateUi
+
+
