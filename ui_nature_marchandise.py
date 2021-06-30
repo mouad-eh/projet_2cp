@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'nature_marchandiseKZyjtR.ui'
+## Form generated from reading UI file 'nature_marchandiseXmPqsn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -23,7 +23,7 @@ class Ui_Form(object):
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
-        self.frame.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame.setStyleSheet(u"background-color: rgba(255,255,255,0.3);")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame)
@@ -31,9 +31,8 @@ class Ui_Form(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.frame_2 = QFrame(self.frame)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);\n"
-"border-radius: 5px")
+        self.frame_2.setStyleSheet(u"background-color: #2f3e46;\n"
+"color: white;")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame_2)
@@ -41,7 +40,9 @@ class Ui_Form(object):
         self.label = QLabel(self.frame_2)
         self.label.setObjectName(u"label")
         font = QFont()
-        font.setPointSize(16)
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
         self.label.setFont(font)
 
         self.horizontalLayout.addWidget(self.label)
@@ -61,14 +62,22 @@ class Ui_Form(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.label_2 = QLabel(self.frame_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"color: rgb(0, 131, 130);")
+        font1 = QFont()
+        font1.setBold(True)
+        font1.setWeight(75)
+        self.label_2.setFont(font1)
+        self.label_2.setStyleSheet(u"color: #52796f;\n"
+"")
 
         self.horizontalLayout_2.addWidget(self.label_2)
 
         self.recherche_marchandise = QLineEdit(self.frame_3)
         self.recherche_marchandise.setObjectName(u"recherche_marchandise")
-        self.recherche_marchandise.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
+        self.recherche_marchandise.setStyleSheet(u"background-color: white;\n"
+"color: #2f3e46;\n"
+"padding: 3px;\n"
+"border : 1px solid #52796f;\n"
+"border-radius: 3px;")
 
         self.horizontalLayout_2.addWidget(self.recherche_marchandise)
 
@@ -94,7 +103,13 @@ class Ui_Form(object):
         __qtablewidgetitem1 = QTableWidgetItem()
         self.table_marchandise.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         self.table_marchandise.setObjectName(u"table_marchandise")
+        self.table_marchandise.setStyleSheet(u"background-color: white;\n"
+"color: #52796f;\n"
+"selection-background-color: #a2d2ff;\n"
+"selection-color:#2f3e46;\n"
+"border-radius: 10px;")
         self.table_marchandise.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.table_marchandise.setAlternatingRowColors(True)
         self.table_marchandise.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table_marchandise.horizontalHeader().setVisible(True)
         self.table_marchandise.horizontalHeader().setCascadingSectionResizes(False)
@@ -119,29 +134,61 @@ class Ui_Form(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.nouveau_marchandise = QPushButton(self.frame_4)
         self.nouveau_marchandise.setObjectName(u"nouveau_marchandise")
-        self.nouveau_marchandise.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.nouveau_marchandise.setFont(font1)
+        self.nouveau_marchandise.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.verticalLayout.addWidget(self.nouveau_marchandise)
 
         self.modifier_marchandise = QPushButton(self.frame_4)
         self.modifier_marchandise.setObjectName(u"modifier_marchandise")
-        self.modifier_marchandise.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.modifier_marchandise.setFont(font1)
+        self.modifier_marchandise.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.verticalLayout.addWidget(self.modifier_marchandise)
 
         self.supprimer_marchandise = QPushButton(self.frame_4)
         self.supprimer_marchandise.setObjectName(u"supprimer_marchandise")
-        self.supprimer_marchandise.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.supprimer_marchandise.setFont(font1)
+        self.supprimer_marchandise.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.verticalLayout.addWidget(self.supprimer_marchandise)
 
         self.fermer_marchandise = QPushButton(self.frame_4)
         self.fermer_marchandise.setObjectName(u"fermer_marchandise")
-        self.fermer_marchandise.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.fermer_marchandise.setFont(font1)
+        self.fermer_marchandise.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.verticalLayout.addWidget(self.fermer_marchandise)
 

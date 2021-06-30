@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'suivi_emballagesQfFDZR.ui'
+## Form generated from reading UI file 'suivi_emballageshmWREJ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -23,7 +23,7 @@ class Ui_Form(object):
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
-        self.frame.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame.setStyleSheet(u"background-color: rgba(255,255,255,0.3);")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame)
@@ -31,14 +31,18 @@ class Ui_Form(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.frame_2 = QFrame(self.frame)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"border-radius: 5px;")
+        self.frame_2.setStyleSheet(u"background-color: #2f3e46;\n"
+"color: white;")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame_2)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.label = QLabel(self.frame_2)
         self.label.setObjectName(u"label")
+        font = QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
         self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.horizontalLayout.addWidget(self.label)
@@ -51,6 +55,7 @@ class Ui_Form(object):
 
         self.label_2 = QLabel(self.frame_2)
         self.label_2.setObjectName(u"label_2")
+        self.label_2.setFont(font)
         self.label_2.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.horizontalLayout.addWidget(self.label_2)
@@ -72,6 +77,11 @@ class Ui_Form(object):
 
         self.tabWidget = QTabWidget(self.frame)
         self.tabWidget.setObjectName(u"tabWidget")
+        font1 = QFont()
+        font1.setBold(False)
+        font1.setItalic(False)
+        font1.setWeight(50)
+        self.tabWidget.setFont(font1)
         self.tab_5 = QWidget()
         self.tab_5.setObjectName(u"tab_5")
         self.tabWidget.addTab(self.tab_5, "")
@@ -90,8 +100,16 @@ class Ui_Form(object):
         self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
         self.recherche_approfondie = QPushButton(self.frame_3)
         self.recherche_approfondie.setObjectName(u"recherche_approfondie")
-        self.recherche_approfondie.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.recherche_approfondie.setFont(font)
+        self.recherche_approfondie.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.gridLayout_3.addWidget(self.recherche_approfondie, 0, 0, 1, 1)
 
@@ -101,15 +119,31 @@ class Ui_Form(object):
 
         self.valider = QPushButton(self.frame_3)
         self.valider.setObjectName(u"valider")
-        self.valider.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.valider.setFont(font)
+        self.valider.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.gridLayout_3.addWidget(self.valider, 0, 2, 1, 1)
 
         self.fermer = QPushButton(self.frame_3)
         self.fermer.setObjectName(u"fermer")
-        self.fermer.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.fermer.setFont(font)
+        self.fermer.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.gridLayout_3.addWidget(self.fermer, 0, 3, 1, 1)
 
@@ -135,7 +169,13 @@ class Ui_Form(object):
         __qtablewidgetitem8 = QTableWidgetItem()
         self.emballage_table.setHorizontalHeaderItem(8, __qtablewidgetitem8)
         self.emballage_table.setObjectName(u"emballage_table")
+        self.emballage_table.setStyleSheet(u"background-color: white;\n"
+"color: #52796f;\n"
+"selection-background-color: #a2d2ff;\n"
+"selection-color:#2f3e46;\n"
+"border-radius: 10px;")
         self.emballage_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.emballage_table.setAlternatingRowColors(True)
         self.emballage_table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.emballage_table.horizontalHeader().setStretchLastSection(True)
         self.emballage_table.verticalHeader().setVisible(False)
@@ -148,22 +188,46 @@ class Ui_Form(object):
 
         self.nouveau = QPushButton(self.frame_3)
         self.nouveau.setObjectName(u"nouveau")
-        self.nouveau.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.nouveau.setFont(font)
+        self.nouveau.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.gridLayout_3.addWidget(self.nouveau, 2, 3, 1, 1)
 
         self.modifier = QPushButton(self.frame_3)
         self.modifier.setObjectName(u"modifier")
-        self.modifier.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.modifier.setFont(font)
+        self.modifier.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.gridLayout_3.addWidget(self.modifier, 3, 3, 1, 1)
 
         self.supprimer = QPushButton(self.frame_3)
         self.supprimer.setObjectName(u"supprimer")
-        self.supprimer.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.supprimer.setFont(font)
+        self.supprimer.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.gridLayout_3.addWidget(self.supprimer, 4, 3, 1, 1)
 

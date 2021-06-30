@@ -8,7 +8,7 @@ from ui_suivi_emballages import Ui_Form as Suivi_emballages_form
 from ui_ajout_emballage import Ui_Form as Ajout_emballage_from
 from ui_modifier_emballage import Ui_Form as Modifier_emballage_form
 
-from multiobjet2 import *
+from class_multiobjet import *
 
 def stringToDate(str):
     year, month, day = str.split("-")
@@ -148,7 +148,8 @@ class SuiviEmballagesWindow(QWidget):
         for i in range(9):
             self.widget2.inputs[i].clear()
         self.widget2.close()
-
+# todo: handle incompatible input
+# todo: set datetime to null
 if __name__ == "__main__":
     app = QApplication()
     widget = SuiviEmballagesWindow()

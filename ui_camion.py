@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'camionFXedVF.ui'
+## Form generated from reading UI file 'camiongrbKXu.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -23,7 +23,7 @@ class Ui_Form(object):
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
-        self.frame.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame.setStyleSheet(u"background-color: rgba(255,255,255,0.3);")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame)
@@ -31,9 +31,8 @@ class Ui_Form(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.frame_2 = QFrame(self.frame)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);\n"
-"border-radius: 5px")
+        self.frame_2.setStyleSheet(u"background-color: #2f3e46;\n"
+"color: white;")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame_2)
@@ -41,7 +40,9 @@ class Ui_Form(object):
         self.label = QLabel(self.frame_2)
         self.label.setObjectName(u"label")
         font = QFont()
-        font.setPointSize(16)
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
         self.label.setFont(font)
 
         self.horizontalLayout.addWidget(self.label)
@@ -61,14 +62,21 @@ class Ui_Form(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.label_2 = QLabel(self.frame_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"color: rgb(0, 131, 130);")
+        font1 = QFont()
+        font1.setBold(True)
+        font1.setWeight(75)
+        self.label_2.setFont(font1)
+        self.label_2.setStyleSheet(u"color: #52796f;")
 
         self.horizontalLayout_2.addWidget(self.label_2)
 
         self.recherche_matricule = QLineEdit(self.frame_3)
         self.recherche_matricule.setObjectName(u"recherche_matricule")
-        self.recherche_matricule.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
+        self.recherche_matricule.setStyleSheet(u"background-color: white;\n"
+"color: #2f3e46;\n"
+"padding: 3px;\n"
+"border : 1px solid #52796f;\n"
+"border-radius: 3px;")
 
         self.horizontalLayout_2.addWidget(self.recherche_matricule)
 
@@ -96,7 +104,13 @@ class Ui_Form(object):
         __qtablewidgetitem2 = QTableWidgetItem()
         self.camion_table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.camion_table.setObjectName(u"camion_table")
+        self.camion_table.setStyleSheet(u"background-color: white;\n"
+"color: #52796f;\n"
+"selection-background-color: #a2d2ff;\n"
+"selection-color:#2f3e46;\n"
+"border-radius: 10px;")
         self.camion_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.camion_table.setAlternatingRowColors(True)
         self.camion_table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.camion_table.horizontalHeader().setStretchLastSection(True)
         self.camion_table.verticalHeader().setVisible(False)
@@ -116,29 +130,61 @@ class Ui_Form(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.nouveau_camion = QPushButton(self.frame_4)
         self.nouveau_camion.setObjectName(u"nouveau_camion")
-        self.nouveau_camion.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.nouveau_camion.setFont(font1)
+        self.nouveau_camion.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.verticalLayout.addWidget(self.nouveau_camion)
 
         self.modifier_camion = QPushButton(self.frame_4)
         self.modifier_camion.setObjectName(u"modifier_camion")
-        self.modifier_camion.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.modifier_camion.setFont(font1)
+        self.modifier_camion.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.verticalLayout.addWidget(self.modifier_camion)
 
         self.supprimer_camion = QPushButton(self.frame_4)
         self.supprimer_camion.setObjectName(u"supprimer_camion")
-        self.supprimer_camion.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.supprimer_camion.setFont(font1)
+        self.supprimer_camion.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.verticalLayout.addWidget(self.supprimer_camion)
 
         self.fermer_camion = QPushButton(self.frame_4)
         self.fermer_camion.setObjectName(u"fermer_camion")
-        self.fermer_camion.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.fermer_camion.setFont(font1)
+        self.fermer_camion.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.verticalLayout.addWidget(self.fermer_camion)
 

@@ -6,7 +6,7 @@ from ui_navire import Ui_Form as Navire_form
 from ui_ajout_navire import Ui_Form as Ajout_navire_form
 from ui_modifier_navire import Ui_Form as Modifier_navire_form
 
-from multiobjet2 import *
+from class_multiobjet import *
 
 class AjoutNavireWindow(QWidget):
     def __init__(self):
@@ -102,6 +102,7 @@ class NavireWindow(QWidget):
         self.ui.navire_table.setVerticalHeaderItem(availableRow, QTableWidgetItem(str(navire_id)))
         self.ui.navire_table.setItem(availableRow, 0, QTableWidgetItem(navire))
         self.ui.navire_table.setItem(availableRow, 1, QTableWidgetItem(description))
+        self.widget.close()
 
     def fermer_ajouter_navire(self):
         self.widget.ui.navire.clear()
@@ -118,6 +119,7 @@ class NavireWindow(QWidget):
         # clear line edits after modifying
         self.widget2.ui.navire.clear()
         self.widget2.ui.description.clear()
+        self.widget2.close()
 
     def fermer_modifier_navire(self):
         self.widget2.ui.navire.clear()

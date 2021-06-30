@@ -6,7 +6,7 @@ from ui_nature_marchandise import Ui_Form as Nature_marchandise_form
 from ui_ajout_marchandise import Ui_Form as Ajout_marchandise_form
 from ui_modifier_marchandise import Ui_Form as Modifier_marchandise_form
 
-from multiobjet2 import *
+from class_multiobjet import *
 
 class AjoutMarchandiseWindow(QWidget):
     def __init__(self):
@@ -102,6 +102,7 @@ class NatureMarchandiseWindow(QWidget):
         self.ui.table_marchandise.setVerticalHeaderItem(availableRow, QTableWidgetItem(str(marchandise_id)))
         self.ui.table_marchandise.setItem(availableRow, 0, QTableWidgetItem(type))
         self.ui.table_marchandise.setItem(availableRow, 1, QTableWidgetItem(description))
+        self.widget.close()
 
     def fermer_ajouter_marchandise(self):
         self.widget.ui.type.clear()
@@ -118,6 +119,7 @@ class NatureMarchandiseWindow(QWidget):
         # clear line edits after modifying
         self.widget2.ui.type.clear()
         self.widget2.ui.description.clear()
+        self.widget2.close()
 
     def fermer_modifier_marchandise(self):
         self.widget2.ui.type.clear()

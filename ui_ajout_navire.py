@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ajout_navirejKPdhu.ui'
+## Form generated from reading UI file 'ajout_navireiAkelL.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -23,7 +23,7 @@ class Ui_Form(object):
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
-        self.frame.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame.setStyleSheet(u"background-color: rgba(255,255,255,0.3);")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_5 = QVBoxLayout(self.frame)
@@ -31,9 +31,9 @@ class Ui_Form(object):
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
         self.frame_2 = QFrame(self.frame)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);\n"
-"border-radius: 5px")
+        self.frame_2.setStyleSheet(u"background-color: #2f3e46;\n"
+"color: white;\n"
+"")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame_2)
@@ -42,6 +42,8 @@ class Ui_Form(object):
         self.label.setObjectName(u"label")
         font = QFont()
         font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
         self.label.setFont(font)
 
         self.horizontalLayout.addWidget(self.label)
@@ -66,13 +68,18 @@ class Ui_Form(object):
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.label_2 = QLabel(self.frame_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"color: rgb(0, 131, 130);")
+        font1 = QFont()
+        font1.setBold(True)
+        font1.setWeight(75)
+        self.label_2.setFont(font1)
+        self.label_2.setStyleSheet(u"color: #52796f;")
 
         self.verticalLayout_2.addWidget(self.label_2)
 
         self.label_3 = QLabel(self.frame_3)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"color: rgb(0, 131, 130);")
+        self.label_3.setFont(font1)
+        self.label_3.setStyleSheet(u"color: #52796f;")
 
         self.verticalLayout_2.addWidget(self.label_3)
 
@@ -87,15 +94,21 @@ class Ui_Form(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.navire = QLineEdit(self.frame_3)
         self.navire.setObjectName(u"navire")
-        self.navire.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
+        self.navire.setStyleSheet(u"background-color: white;\n"
+"color: #2f3e46;\n"
+"padding: 3px;\n"
+"border : 1px solid #52796f;\n"
+"border-radius: 3px;")
 
         self.verticalLayout.addWidget(self.navire)
 
         self.description = QTextEdit(self.frame_3)
         self.description.setObjectName(u"description")
-        self.description.setStyleSheet(u"border : 1px solid rgba(0,0,0,0);\n"
-"border-bottom-color : rgba(46,82,101,255);")
+        self.description.setStyleSheet(u"background-color: white;\n"
+"color: #2f3e46;\n"
+"padding: 3px;\n"
+"border : 1px solid #52796f;\n"
+"border-radius: 3px;")
 
         self.verticalLayout.addWidget(self.description)
 
@@ -113,15 +126,33 @@ class Ui_Form(object):
 
         self.fermer_ajout_navire = QPushButton(self.frame_3)
         self.fermer_ajout_navire.setObjectName(u"fermer_ajout_navire")
-        self.fermer_ajout_navire.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);")
+        self.fermer_ajout_navire.setFont(font1)
+        self.fermer_ajout_navire.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #ee2e31;\n"
+"padding: 5px;\n"
+"width: 65px;\n"
+"border: 2px solid #ee2e31;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #ee2e31;color: white;}\n"
+"QPushButton:pressed{margin: 1px;}")
 
         self.horizontalLayout_3.addWidget(self.fermer_ajout_navire)
 
         self.ajouter_ajout_navire = QPushButton(self.frame_3)
         self.ajouter_ajout_navire.setObjectName(u"ajouter_ajout_navire")
-        self.ajouter_ajout_navire.setStyleSheet(u"background-color: rgb(0, 131, 130);\n"
-"color: rgb(255, 255, 255);")
+        self.ajouter_ajout_navire.setFont(font1)
+        self.ajouter_ajout_navire.setStyleSheet(u"QPushButton {\n"
+"background-color: white;\n"
+"color: #3bb273;\n"
+"padding: 6px;\n"
+"width: 65px;\n"
+"border: 2px solid #3bb273;\n"
+"border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover {background-color: #3bb273;color: white;}\n"
+"QPushButton:pressed { margin: 1px; }")
 
         self.horizontalLayout_3.addWidget(self.ajouter_ajout_navire)
 

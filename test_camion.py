@@ -6,7 +6,7 @@ from ui_camion import Ui_Form as Camion_form
 from ui_ajout_camion import Ui_Form as Ajout_camion_form
 from ui_modifier_camion import Ui_Form as Modifier_camion_form
 
-from multiobjet2 import *
+from class_multiobjet import *
 
 def charToString(dispo):
     if dispo == 'D':
