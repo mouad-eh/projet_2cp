@@ -1,2 +1,2 @@
 # projet_2cp
-[manuelle d'utilisation](assets/README.md)
+[présentation de l'application](assets/README.md)
